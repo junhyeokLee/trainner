@@ -22,8 +22,8 @@ Room, Dagger Hilt, Coroutines, Rtrofit, MVVM 사용
 </p>
 
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/14d970a6-4577-46cb-9794-2b24781b53bd" alt="스쿼트" style="width: auto; height: auto;">
-  <img src="https://github.com/user-attachments/assets/e1ff9cc4-eb4b-4384-b4a8-d4b2175ca808" alt="트래킹" style="width: auto; height: auto;">
+  <img src="https://github.com/user-attachments/assets/14d970a6-4577-46cb-9794-2b24781b53bd" alt="스쿼트" style="width: 200px; height: auto;">
+  <img src="https://github.com/user-attachments/assets/e1ff9cc4-eb4b-4384-b4a8-d4b2175ca808" alt="트래킹" style="width: 200px; height: auto;">
 </p>
 
 <p align="left">
