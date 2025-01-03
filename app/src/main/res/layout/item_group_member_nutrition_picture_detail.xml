@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="136dp"
+    android:layout_height="136dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginEnd="12dp">
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+
+        <CheckBox
+            android:id="@+id/iv_check_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:background="@drawable/border_selector"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/iv_nutrition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="1dp"
+            android:clipToOutline="true"
+            android:clickable="true" />
+<!--        android:background="@drawable/bg_nutrition_selector"-->
+
+        <CheckBox
+            android:id="@+id/iv_check"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right|top"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:button="@null"
+            android:background="@drawable/bg_check_round_primary_selector" />
+
+        <LinearLayout
+            android:id="@+id/ll_evaluation_complete"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:visibility="gone"
+            android:layout_margin="1dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_bottom_rounded">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="평가 완료"
+                style="@style/text_roboto_R2"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        
+        <!-- 프로그레스바 -->
+        <ProgressBar
+            android:id="@+id/loadingProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

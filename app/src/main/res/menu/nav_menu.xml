@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/fragment_group" android:title="그룹별" android:icon="@drawable/ic_bottom_navigation_tab1" android:menuCategory="secondary" android:enabled="true" />
+    <item android:id="@+id/fragment_group_member" android:title="그룹원 별" android:icon="@drawable/ic_bottom_navigation_tab2" android:menuCategory="secondary" android:enabled="true" />
+    <item android:id="@+id/fragment_my_exercise" android:title="내 운동룸" android:icon="@drawable/ic_bottom_navigation_tab3" android:menuCategory="secondary" android:enabled="true"/>
+    <item android:id="@+id/fragment_ingredient" android:title="성분검색" android:icon="@drawable/ic_bottom_navigation_tab4" android:menuCategory="secondary" android:enabled="true"/>
+<!--    <item android:id="@+id/fragment_my_profile" android:title="MY" android:actionLayout="@layout/menu_profile_with_icon_title" android:icon="@drawable/ic_bottom_navigation_tab5" android:menuCategory="secondary" android:enabled="true"/>-->
+<!--    <item android:id="@+id/fragment_my_profile" android:title="MY" android:layout="@layout/menu_profile_with_icon_title" />-->
+    <item android:id="@+id/fragment_my_profile" android:enabled="true" android:title="MY" app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,16 @@
+
+Wkotlin:S1172È"7Remove this unused function parameter "passwordChange".(Üˆ’è8ÎÚ¿æâ1
+>kotlin:S1128"Remove this unused import.(²…¿ßÿÿÿÿÿ8öÚ¿æâ1
+8kotlin:S1128"Remove this unused import.(‰¿Ë8öÚ¿æâ1
+9kotlin:S1128"Remove this unused import.(±Ğ½ø8öÚ¿æâ1
+>kotlin:S1128"Remove this unused import.(úœË§ıÿÿÿÿ8öÚ¿æâ1
+>kotlin:S1128"Remove this unused import.(ëÖ÷Òøÿÿÿÿ8öÚ¿æâ1
+>kotlin:S1128"Remove this unused import.(ò³ÄŒøÿÿÿÿ8öÚ¿æâ1
+8kotlin:S1128"Remove this unused import.(âÁÕb8öÚ¿æâ1
+qkotlin:S37763"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ÆÌè–8ıÚ¿æâ1
+Okotlin:S6519="+Replace "equals" with binary operator "==".(èãÁØøÿÿÿÿ8…Û¿æâ1
+Okotlin:S6519v"+Replace "equals" with binary operator "==".(èãÁØøÿÿÿÿ8…Û¿æâ1
+Okotlin:S6519a"+Replace "equals" with binary operator "==".(¡ÙÕ˜øÿÿÿÿ8…Û¿æâ1
+Pkotlin:S6519™"+Replace "equals" with binary operator "==".(ÔÜÏïÿÿÿÿÿ8†Û¿æâ1
+Qkotlin:S6519Z"3Replace "!" and "equals" with binary operator "!=".(â£×U8†Û¿æâ1
+Skotlin:S6519’"3Replace "!" and "equals" with binary operator "!=".(Ğ†Ûò8†Û¿æâ1

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="26dp"
+        >
+
+    <TextView
+        android:id="@+id/tv_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_roboto_R2"
+        android:textColor="@color/black"
+        android:text="63%"
+        />
+
+    <TextView
+        android:id="@+id/tv_unit_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        style="@style/text_roboto_R2"
+        android:text="요가프로그램"
+        android:textColor="@color/black"
+        >
+    </TextView>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ib_delete"
+        android:visibility="visible"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_cancle_32"
+        android:layout_gravity="top|end"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="4dp"
+        />
+
+
+</com.google.android.material.card.MaterialCardView>

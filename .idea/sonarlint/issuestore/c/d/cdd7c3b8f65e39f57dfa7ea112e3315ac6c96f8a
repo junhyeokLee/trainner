@@ -1,0 +1,20 @@
+
+Tkotlin:S1172ü"4Use "_" instead of this unused lambda parameter "e".(úÃ³‡8¬×«¹á1
+Ekotlin:S6615×" Remove this useless initializer.(êóŞ®ıÿÿÿÿ8¼×«¹á1
+Ekotlin:S6615Ö" Remove this useless initializer.(Š˜îèùÿÿÿÿ8Áµ©á1
+Ckotlin:S125Ê"Remove this commented out code.(¨³ÿôùÿÿÿÿ8É×«¹á1
+Ckotlin:S125"Remove this commented out code.(ÁçïŠûÿÿÿÿ8Ê×«¹á1
+Ckotlin:S125Í"Remove this commented out code.(ãú£Éøÿÿÿÿ8Ê×«¹á1
+Ckotlin:S125ò"Remove this commented out code.(Œô²ºÿÿÿÿÿ8Ê×«¹á1
+Ckotlin:S125ƒ"Remove this commented out code.(†Î¦Ëüÿÿÿÿ8Ë×«¹á1
+>kotlin:S125Ë"Remove this commented out code.(¯‰œË8Ë×«¹á1
+’kotlin:S4144Ã"rUpdate this function so that its implementation is not identical to "handlerTrainingSubInsertSuccess" on line 699.(èé¯Œ8Ñ×«¹á1
+—kotlin:S4144Ç"rUpdate this function so that its implementation is not identical to "handlerTrainingSubInsertSuccess" on line 699.(ÑÎéíùÿÿÿÿ8Ñ×«¹á1
+9kotlin:S6531¡"Remove this useless cast.(üÌÜš8ÊØ«¹á1
+>kotlin:S6531¦"Remove this useless cast.(š•“™ıÿÿÿÿ8ÊØ«¹á1
+Lkotlin:S1481À",Remove this unused "message" local variable.(Ãı“«8ÍØ«¹á1
+9kotlin:S1128"Remove this unused import.(ŠëÙ 8Æ°‡Œá1
+>kotlin:S1128"Remove this unused import.(ÙÃä¡şÿÿÿÿ8ğ¯ Œá1
+9kotlin:S1128Q"Remove this unused import.(Ş‡¿ó8íØ«¹á1
+Dkotlin:S6524¯"Make this collection immutable.(šºÁüÿÿÿÿ8ƒÙ«¹á1
+kotlin:S1186¿"ZAdd a nested comment explaining why this function is empty or complete the implementation.(úòèüúÿÿÿÿ8„«†¤å1

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="프로필 수정"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_alignParentStart="true">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:src="@mipmap/ic_back"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                tools:ignore="RtlHardcoded" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/status_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_profileImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center">
+
+                        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_circle_img"
+                            android:backgroundTint="@color/profile_background"
+                            app:cardCornerRadius="360dp">
+
+                            <ImageView
+                                android:id="@+id/logoImg"
+                                android:layout_width="54dp"
+                                android:layout_height="54dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/ic_profile"
+                                android:backgroundTint="@color/gray"
+                                android:gravity="center"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/iv_profile_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/ic_profile"
+                                android:visibility="gone"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="bottom"
+                                android:background="@color/gray_overlay">
+
+                                <TextView
+                                    android:id="@+id/tv_profile_edit"
+                                    style="@style/text_roboto_R1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="수정"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+                    </FrameLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_my_name"
+                        style="@style/text_roboto_R2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:background="@drawable/bg_edittext_comment"
+                        android:padding="16dp"
+                        android:text="이름"
+                        android:textColor="@color/gray2" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="24dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:hint="비밀번호"
+                        android:textColorHint="@color/gray">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edit_pwd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:contextClickable="false"
+                            android:drawableRight="@drawable/ic_right_arrow"
+                            android:drawableTint="@color/gray"
+                            android:focusable="false"
+                            android:cursorVisible="false"
+                            android:textCursorDrawable="@null"
+                            android:focusableInTouchMode="false"
+                            android:inputType="none"
+                            android:text="**********" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/normalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/progress_wheel"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            wheel:layout_constraintBottom_toBottomOf="parent"
+            wheel:layout_constraintEnd_toEndOf="parent"
+            wheel:layout_constraintStart_toStartOf="parent"
+            wheel:layout_constraintTop_toTopOf="parent"
+            wheel:matProg_barColor="@color/primary"
+            wheel:matProg_progressIndeterminate="true" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

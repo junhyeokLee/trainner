@@ -1,0 +1,6 @@
+
+ekotlin:S107."GThis function has 8 parameters, which is greater than the 7 authorized.(»ü¾ˆ8ã¢ô€Ò1
+9kotlin:S1128"Remove this unused import.(üƒŠ¸8ş¢ô€Ò1
+>kotlin:S1128"Remove this unused import.(ÊÒÅ­ùÿÿÿÿ8ş¢ô€Ò1
+Hkotlin:S1874¡"#Deprecated code should not be used.(Ë®Ù»ûÿÿÿÿ8í¥‡Ò1
+akotlin:S6517»"BMake this interface functional or replace it with a function type.(í¨ g8ñ¥‡Ò1

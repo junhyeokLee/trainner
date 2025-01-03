@@ -1,0 +1,295 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="SpUsage">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionBarStyle">@style/ActionBar</item>
+    </style>
+
+    <style name="Widget.Theme.Trainer.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/background_color</item>
+    </style>
+
+    <style name="Widget.Theme.Trainer.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/background_color</item>
+    </style>
+
+    <!--  ActionBar 스타일 -->
+    <style name="ActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="background">@color/white</item> <!-- 원하는 배경색으로 설정 -->
+        <item name="titleTextStyle">@style/title_text_noto_bold_16</item> <!-- 타이틀 텍스트 스타일 설정 -->
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+        <!-- 투명 다이얼로그 스타일 정의 -->
+        <style name="TransparentDialog" parent="@android:style/Theme.Dialog">
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:windowIsFloating">true</item>
+            <item name="android:windowNoTitle">true</item>
+        </style>
+
+
+    <!-- bottomSheet 라운드처리 -->
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_dialog</item>
+    </style>
+
+
+    <style name="input_login_box_edit">
+        <item name="android:background">@drawable/bg_login_edittext</item>
+        <item name="android:textAppearance">@style/text_roboto_R1</item>
+        <item name="android:textColorHint">@color/color_input_box_hint</item>
+        <item name="android:paddingStart">@dimen/input_box_start_padding</item>
+        <item name="android:paddingEnd">@dimen/input_box_end_padding</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+    <style name="input_box_edit_nutrition_comment">
+        <item name="android:background">@drawable/bg_edittext_nutrition_comment</item>
+        <item name="android:textAppearance">@style/text_roboto_R2</item>
+        <item name="android:textColor">@color/color_error_text</item>
+        <item name="android:textColorHint">@color/color_input_box_hint</item>
+    </style>
+
+    <style name="input_box_edit">
+        <item name="android:inputType">text</item>
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:textAppearance">@style/text_roboto_R3</item>
+        <item name="android:textColorHint">@color/color_input_box_hint</item>
+        <item name="android:paddingStart">@dimen/input_box_start_padding</item>
+        <item name="android:paddingEnd">@dimen/input_box_end_padding</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+    <style name="input_box_edit2">
+        <item name="android:inputType">text</item>
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:textAppearance">@style/text_roboto_R3</item>
+        <item name="android:textColorHint">@color/color_input_box_hint</item>
+    </style>
+
+    <style name="input_box_edit_comment">
+        <item name="android:background">@drawable/bg_edittext_comment</item>
+        <item name="android:textAppearance">@style/text_roboto_R3</item>
+        <item name="android:textColor">@color/color_error_text</item>
+        <item name="android:textColorHint">@color/color_input_box_hint</item>
+    </style>
+
+    <style name="input_box_text">
+        <item name="android:inputType">text</item>
+        <item name="android:background">@drawable/bg_input_text</item>
+        <item name="android:textAppearance">@style/text_roboto_R3</item>
+        <item name="android:textColor">@color/color_error_text</item>
+        <item name="android:textColorHint">@color/color_input_box_hint</item>
+    </style>
+
+    <style name="button_checked">
+        <item name="android:background">@drawable/bg_button_checked</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:state_enabled">false</item>
+        <item name="android:fontFamily">@font/roboto_r</item>
+    </style>
+
+    <style name="button_checked_round_black">
+        <item name="android:background">@drawable/round_button_black</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:state_enabled">false</item>
+        <item name="android:fontFamily">@font/roboto_r</item>
+    </style>
+
+    <style name="button_primary">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/roboto_r</item>
+    </style>
+
+    <style name="button_secondary">
+        <item name="android:background">@drawable/bg_button_secondary</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/roboto_r</item>
+    </style>
+
+    <style name="bg_roubnd_primary">
+        <item name="android:background">@drawable/bg_round_primary</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/roboto_r</item>
+    </style>
+
+    <style name="button_small_primary">
+        <item name="android:background">@drawable/bg_button_small_secondary</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/roboto_r</item>
+    </style>
+
+    <style name="drop_down_primary">
+        <item name="android:background">@drawable/bg_drop_dowun</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <style name="drop_down_secondary">
+        <item name="android:background">@drawable/bg_drop_dowun_secondary</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <style name="drop_down_date">
+        <item name="android:background">@drawable/bg_drop_dowun_date</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+
+    <style name="my_drop_down_primary">
+        <item name="android:background">@drawable/bg_my_drop_dowun</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <style name="my_drop_down_secondary">
+        <item name="android:background">@drawable/bg_my_drop_dowun_secondary</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+
+    <style name="text_roboto_B">
+        <item name="android:fontFamily">@font/roboto_b</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_roboto_R">
+        <item name="android:fontFamily">@font/roboto_r</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontWeight">500</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_roboto_B1">
+        <item name="android:fontFamily">@font/roboto_b</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_roboto_R1">
+        <item name="android:fontFamily">@font/roboto_r</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_roboto_B2">
+        <item name="android:fontFamily">@font/roboto_b</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_roboto_R2">
+        <item name="android:fontFamily">@font/roboto_r</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontWeight">500</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_roboto_B3">
+        <item name="android:fontFamily">@font/roboto_b</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_roboto_R3">
+        <item name="android:fontFamily">@font/roboto_r</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_roboto_B4">
+        <item name="android:fontFamily">@font/roboto_b</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="text_roboto_R4">
+        <item name="android:fontFamily">@font/roboto_r</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_roboto_R5">
+        <item name="android:fontFamily">@font/roboto_r</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+
+    <style name="title_text_noto_bold_16" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">@font/noto</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/background_color</item>
+    </style>
+
+    <style name="no_scroll_list_view_style">
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:clickable">false</item> <!-- 아이템 클릭 비활성화 -->
+        <item name="android:focusable">false</item> <!-- 포커스 비활성화 -->
+        <item name="tabRippleColor">@null</item>
+        <item name="itemRippleColor">@null</item>
+        <item name="android:groupIndicator">@null</item>
+    </style>
+
+    <style name="ProgressDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+</resources>

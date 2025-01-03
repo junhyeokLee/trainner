@@ -1,0 +1,6 @@
+
+]kotlin:S6619I">Remove this useless non-null assertion !!, it always succeeds.(Õ¹Ï8—…©¸á1
+=kotlin:S125`"Remove this commented out code.(Ë”£–8œ…©¸á1
+8kotlin:S1128"Remove this unused import.(Þ‚½8ª…©¸á1
+>kotlin:S6524#"Make this collection immutable.(Ô¶ ¬8°…©¸á1
+fkotlin:S6517{"BMake this interface functional or replace it with a function type.(è’Óâùÿÿÿÿ8¹…©¸á1

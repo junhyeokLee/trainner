@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 원형 배경 -->
+    <item android:drawable="@drawable/check_true_round_primary" />
+    <!-- 이미지 -->
+    <item
+        android:drawable="@drawable/ic_check_white"
+        android:width="12dp"
+        android:height="9dp"
+        android:gravity="center" />
+</layer-list>

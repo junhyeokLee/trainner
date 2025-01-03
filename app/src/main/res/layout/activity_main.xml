@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/topBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:elevation="0dp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/topBar"
+            android:background="@color/background_color"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:contentInsetStart="16dp"
+            app:contentInsetEnd="8dp"
+            android:paddingEnd="8dp"
+            app:contentInsetStartWithNavigation="0dp"
+            android:clipToPadding="false"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/topBarBackButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/ic_back_28"
+        ></androidx.appcompat.widget.AppCompatImageButton>
+
+        <TextView
+            android:id="@+id/topBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            style="@style/text_roboto_R"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/line"
+            style="@style/line"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/groupNavHostFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:keepScreenOn="true"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBarLayout"
+        app:navGraph="@navigation/my_nav"
+        tools:context=".MainActivity"
+        />
+
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/composeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        ></androidx.compose.ui.platform.ComposeView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:itemTextColor="@color/bottom_navigation_item_colors"
+        app:itemIconSize="30dp"
+        app:itemPaddingTop="12dp"
+        app:itemPaddingBottom="12dp"
+        app:menu="@menu/nav_menu"
+        app:itemRippleColor="@null"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+<!--    <com.sports2i.trainer.ui.widget.MyBottomNavigation-->
+<!--        android:id="@+id/bottomNavigationView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        app:labelVisibilityMode="unlabeled"-->
+<!--        app:itemTextColor="@color/bottom_navigation_item_colors"-->
+<!--        app:itemIconSize="30dp"-->
+<!--        app:itemPaddingTop="12dp"-->
+<!--        app:itemPaddingBottom="12dp"-->
+<!--        app:menu="@menu/nav_menu"-->
+<!--        app:itemRippleColor="@null"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

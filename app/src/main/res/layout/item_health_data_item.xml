@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    app:cardCornerRadius="12dp"
+    app:strokeColor="@color/border_color"
+    app:cardBackgroundColor="@color/white"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        >
+
+    <TextView
+        android:id="@+id/tv_type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_roboto_R3"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="평균피부전도"
+        />
+
+    <TextView
+        android:id="@+id/tv_type_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        style="@style/text_roboto_B1"
+        android:background="@drawable/bg_active_gradient"
+        android:text="120"
+        android:textColor="@color/white"
+        android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_type_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            style="@style/text_roboto_R3"
+            android:text="bmp"
+            android:textColor="@color/gray2"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+

@@ -1,0 +1,11 @@
+
+Xkotlin:S1172α"8Use "_" instead of this unused lambda parameter "which".(λτ8κώαγ1
+Wkotlin:S1172ή"2Use "_" instead of these unused lambda parameters.(½΄υ•ϊÿÿÿÿ8κώαγ1
+>kotlin:S125η"Remove this commented out code.(Ω8λΪγγ1
+>kotlin:S125π"Remove this commented out code.(Σκ·Υ8Μβγ1
+Hkotlin:S108Ί")Either remove or fill this block of code.(Τ‘Ό8βκώαγ1
+Hkotlin:S1874"#Deprecated code should not be used.(Ϋ™ΩΔϋÿÿÿÿ8ϊκώαγ1
+vkotlin:S3776h"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ΛΦιδψÿÿÿÿ8ϋκώαγ1
+Dkotlin:S6524Φ"Make this collection immutable.(ξζψÿÿÿÿ8€λώαγ1
+Dkotlin:S6524Ϊ"Make this collection immutable.(ΊΑόÿÿÿÿ8€λώαγ1
+?kotlin:S6524ή"Make this collection immutable.(΅θαϋ8€λώαγ1

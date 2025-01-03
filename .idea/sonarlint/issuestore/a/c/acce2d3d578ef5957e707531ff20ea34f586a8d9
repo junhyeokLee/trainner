@@ -1,0 +1,22 @@
+
+Ekotlin:S6615Ë" Remove this useless initializer.(ğó®Ôşÿÿÿÿ8¨Ë™Ş1
+Ekotlin:S6615Ê" Remove this useless initializer.(ÑØßüÿÿÿÿ8ªË™Ş1
+@kotlin:S6615É" Remove this useless initializer.(­©›8ªË™Ş1
+Fkotlin:S6615’"&The value assigned here is never used.(‘ì¢È8ªË™Ş1
+Fkotlin:S6615"&The value assigned here is never used.(Ø›¨8ªË™Ş1
+Fkotlin:S6615“"&The value assigned here is never used.(˜ìÇë8ªË™Ş1
+=kotlin:S1253"Remove this commented out code.(İëáµ8¾Ë™Ş1
+Bkotlin:S125W"Remove this commented out code.(ªòäøÿÿÿÿ8ÁË™Ş1
+>kotlin:S1128"Remove this unused import.(á»¸•úÿÿÿÿ8•Ë™Ş1
+9kotlin:S1128"Remove this unused import.(®¨“­8•Ë™Ş1
+qkotlin:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ÿ€¾†8†ÿ–šŞ1
+Qkotlin:S6529Û"1Replace collection size check with "isNotEmpty()"(©ìÀ”8¸Ë™Ş1
+Qkotlin:S6529ï"1Replace collection size check with "isNotEmpty()"(©ìÀ”8¸Ë™Ş1
+Qkotlin:S6529ƒ"1Replace collection size check with "isNotEmpty()"(©ìÀ”8¸Ë™Ş1
+`kotlin:S6510"AMove "return" statements from all branches before "if" statement.(´¿Ú8Ğ÷’šŞ1
+\kotlin:S6511 "=Merge chained "if" statements into a single "when" statement.(’ò»İ8ÅË™Ş1
+[kotlin:S6511)"=Merge chained "if" statements into a single "when" statement.(İáÕ8ŞÈ“šŞ1
+]kotlin:S6511Ö"=Merge chained "if" statements into a single "when" statement.(¿ÑË´8¦ÿ–šŞ1
+Kkotlin:S6519Ö"+Replace "equals" with binary operator "==".(¿ÑË´8ÌË™Ş1
+Kkotlin:S6519ê"+Replace "equals" with binary operator "==".(ßÕü8ÌË™Ş1
+Kkotlin:S6519ş"+Replace "equals" with binary operator "==".(áÀ‚8ÍË™Ş1

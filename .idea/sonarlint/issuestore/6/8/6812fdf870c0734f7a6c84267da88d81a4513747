@@ -1,0 +1,11 @@
+
+7kotlin:S1128	"Remove this unused import.(ÊÒÅ­ùÿÿÿÿ
+<kotlin:S125—"Remove this commented out code.(ØàÑ©úÿÿÿÿ
+ikotlin:S3776^"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(¡Ñ!
+jkotlin:S3776¯"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ş–¾%
+Dkotlin:S6518g",Replace function call with indexed accessor.(„öéÃ
+Ikotlin:S6518h",Replace function call with indexed accessor.(„üÑŒøÿÿÿÿ
+Dkotlin:S6518r",Replace function call with indexed accessor.(¤Ö¶„
+Dkotlin:S6518s",Replace function call with indexed accessor.(Ñœ¥€
+Dkotlin:S6518r",Replace function call with indexed accessor.(¤Ö¶„
+Dkotlin:S6518s",Replace function call with indexed accessor.(Ñœ¥€

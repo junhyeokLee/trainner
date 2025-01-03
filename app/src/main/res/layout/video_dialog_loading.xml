@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/normalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/progress_wheel"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            wheel:layout_constraintBottom_toBottomOf="parent"
+            wheel:layout_constraintEnd_toEndOf="parent"
+            wheel:layout_constraintStart_toStartOf="parent"
+            wheel:layout_constraintTop_toTopOf="parent"
+            wheel:matProg_barColor="@color/primary"
+            wheel:matProg_progressIndeterminate="true" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/valueLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:id="@+id/value_progress_wheel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            wheel:layout_constraintBottom_toBottomOf="parent"
+            wheel:layout_constraintEnd_toEndOf="parent"
+            wheel:layout_constraintStart_toStartOf="parent"
+            wheel:layout_constraintTop_toTopOf="parent"
+            wheel:donut_unfinished_stroke_width="7dp"
+            wheel:donut_finished_stroke_width="5dp"
+            wheel:donut_unfinished_color="@android:color/transparent"
+            wheel:donut_finished_color="@color/primary"
+            wheel:donut_text_color="@color/white"
+            wheel:donut_text_size="24dp"
+            wheel:donut_background_color="@color/h1_a50"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_roboto_B1"
+            android:textColor="@color/white"
+            android:text="@string/video_encoding"
+            android:layout_marginTop="@dimen/content_padding"
+            wheel:layout_constraintEnd_toEndOf="parent"
+            wheel:layout_constraintStart_toStartOf="parent"
+            wheel:layout_constraintTop_toBottomOf="@+id/value_progress_wheel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

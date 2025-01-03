@@ -1,0 +1,14 @@
+
+f
+java:S21849"DCast one of the operands of this subtraction operation to a "float".(÷¶Ëªıÿÿÿÿ8‡¤†Ö¾1
+M
+java:S1874"0Remove this use of "getColor"; it is deprecated.(©•À8“ëòÕ¾1
+S
+java:S1854)"7Remove this useless assignment to local variable "max".(ÿªË8¯›Ö¾1
+Y
+java:S1854'"<Remove this useless assignment to local variable "progress".(˜¨—Í8¯›Ö¾1
+J
+java:S1481'"-Remove this unused "progress" local variable.(˜¨—Í8¸›Ö¾1
+D
+java:S1481)"(Remove this unused "max" local variable.(ÿªË8¹›Ö¾1
+X	java:S125="<This block of commented-out lines of code should be removed.(ß÷â†8»›Ö¾1

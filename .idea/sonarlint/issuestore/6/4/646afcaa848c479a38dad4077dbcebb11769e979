@@ -1,0 +1,49 @@
+
+Pkotlin:S1481·"+Remove this unused "userId" local variable.(èÖ©³úÿÿÿÿ8‰¢ÉÓ1
+>kotlin:S1128
+"Remove this unused import.(á»¸•úÿÿÿÿ8ÔŞ¿ÈÓ1
+‚kotlin:S101İ"^Rename class "progressValueDialogListener" to match the regular expression ^[A-Z][a-zA-Z0-9]*$(‹¥¡Èÿÿÿÿÿ8ÇÏ˜¨İ1
+Bkotlin:S1874G"#Deprecated code should not be used.(Öñæº8ÜŞ¿ÈÓ1
+Bkotlin:S1874H"#Deprecated code should not be used.(…Æ´8ûÃÈÓ1
+Akotlin:S1874I"#Deprecated code should not be used.(ôÉá?8¹¢ÉÓ1
+Bkotlin:S1874O"#Deprecated code should not be used.(ÙéïÈ8ÜŞ¿ÈÓ1
+Gkotlin:S1874P"#Deprecated code should not be used.(Í¤‹÷ùÿÿÿÿ8ûÃÈÓ1
+Bkotlin:S1874Q"#Deprecated code should not be used.(¢½Õ8¹¢ÉÓ1
+Bkotlin:S1874]"#Deprecated code should not be used.(ÙéïÈ8ÜŞ¿ÈÓ1
+Gkotlin:S1874^"#Deprecated code should not be used.(Í¤‹÷ùÿÿÿÿ8‘ûÃÈÓ1
+Bkotlin:S1874_"#Deprecated code should not be used.(¢½Õ8º¢ÉÓ1
+Bkotlin:S1874d"#Deprecated code should not be used.(ÙéïÈ8ÜŞ¿ÈÓ1
+Gkotlin:S1874e"#Deprecated code should not be used.(Í¤‹÷ùÿÿÿÿ8‘ûÃÈÓ1
+Bkotlin:S1874f"#Deprecated code should not be used.(¢½Õ8º¢ÉÓ1
+Bkotlin:S1874k"#Deprecated code should not be used.(Öñæº8ÜŞ¿ÈÓ1
+Bkotlin:S1874l"#Deprecated code should not be used.(…Æ´8–ûÃÈÓ1
+Akotlin:S1874m"#Deprecated code should not be used.(ôÉá?8»¢ÉÓ1
+Bkotlin:S1874o"#Deprecated code should not be used.(ßíŸ´8ÜŞ¿ÈÓ1
+Gkotlin:S1874p"#Deprecated code should not be used.(äıƒìşÿÿÿÿ8˜ûÃÈÓ1
+Bkotlin:S1874q"#Deprecated code should not be used.(“¯›•8»¢ÉÓ1
+Ckotlin:S1874€"#Deprecated code should not be used.(ßíŸ´8ÜŞ¿ÈÓ1
+Hkotlin:S1874"#Deprecated code should not be used.(äıƒìşÿÿÿÿ8™ûÃÈÓ1
+Ckotlin:S1874‚"#Deprecated code should not be used.(“¯›•8¼¢ÉÓ1
+Hkotlin:S1874ˆ"#Deprecated code should not be used.(«Í¶üÿÿÿÿ8ÜŞ¿ÈÓ1
+Hkotlin:S1874‰"#Deprecated code should not be used.(Û¼”òûÿÿÿÿ8™ûÃÈÓ1
+Ckotlin:S1874Š"#Deprecated code should not be used.(›òÚÕ8¼¢ÉÓ1
+Hkotlin:S1874•"#Deprecated code should not be used.(«Í¶üÿÿÿÿ8İŞ¿ÈÓ1
+Hkotlin:S1874–"#Deprecated code should not be used.(Û¼”òûÿÿÿÿ8¡ûÃÈÓ1
+Ckotlin:S1874—"#Deprecated code should not be used.(›òÚÕ8¼¢ÉÓ1
+Hkotlin:S1874œ"#Deprecated code should not be used.(«Í¶üÿÿÿÿ8İŞ¿ÈÓ1
+Hkotlin:S1874"#Deprecated code should not be used.(Û¼”òûÿÿÿÿ8¦ûÃÈÓ1
+Ckotlin:S1874"#Deprecated code should not be used.(›òÚÕ8¼¢ÉÓ1
+Ckotlin:S1874£"#Deprecated code should not be used.(ßíŸ´8İŞ¿ÈÓ1
+Hkotlin:S1874¤"#Deprecated code should not be used.(äıƒìşÿÿÿÿ8¦ûÃÈÓ1
+Ckotlin:S1874¥"#Deprecated code should not be used.(“¯›•8½¢ÉÓ1
+Ckotlin:S1874§"#Deprecated code should not be used.(Öñæº8İŞ¿ÈÓ1
+Ckotlin:S1874¨"#Deprecated code should not be used.(…Æ´8§ûÃÈÓ1
+Bkotlin:S1874©"#Deprecated code should not be used.(ôÉá?8½¢ÉÓ1
+qkotlin:S37765"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ãûÊ8É¢ÉÓ1
+gkotlin:S6517İ"BMake this interface functional or replace it with a function type.(‹¥¡Èÿÿÿÿÿ8Ğ˜¨İ1
+Okotlin:S6519E"+Replace "equals" with binary operator "==".(èãÁØøÿÿÿÿ8×¢ÉÓ1
+Okotlin:S6519~"+Replace "equals" with binary operator "==".(èãÁØøÿÿÿÿ8×¢ÉÓ1
+Okotlin:S6519i"+Replace "equals" with binary operator "==".(¡ÙÕ˜øÿÿÿÿ8×¢ÉÓ1
+Pkotlin:S6519¡"+Replace "equals" with binary operator "==".(ÔÜÏïÿÿÿÿÿ8×¢ÉÓ1
+Qkotlin:S6519b"3Replace "!" and "equals" with binary operator "!=".(â£×U8×¢ÉÓ1
+Skotlin:S6519š"3Replace "!" and "equals" with binary operator "!=".(Ğ†Ûò8×¢ÉÓ1

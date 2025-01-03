@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/item_group_exercise"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <TextView
+        android:id="@+id/tv_exercise_goal"
+        style="@style/text_roboto_R2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/exercise_goal"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <ImageButton
+        android:id="@+id/ib_delete"
+        android:visibility="visible"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/ic_cancle_32"
+        android:backgroundTint="@color/gray"
+        android:layout_gravity="top"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="@+id/ll_exercise_box"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_exercise_box"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_exercise_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_round_gray_box">
+
+    <com.sports2i.trainer.ui.view.CustomSpinner
+        android:id="@+id/spinner_exercise_goal"
+        style="@style/drop_down_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_exercise_direct"
+        style="@style/input_box_edit"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_exercise_goal" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_exercise_value"
+        style="@style/input_box_edit"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/exercise_goal_enter"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/et_exercise_direct"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

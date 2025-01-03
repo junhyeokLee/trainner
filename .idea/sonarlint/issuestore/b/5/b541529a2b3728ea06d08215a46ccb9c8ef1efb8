@@ -1,0 +1,21 @@
+
+wkotlin:S1172~"2Use "_" instead of these unused lambda parameters.(¶Î×Ç8Ã–¶¦å1J$fe2689ae-a8c5-446a-9ede-c39244ccb916
+|kotlin:S1172w"2Use "_" instead of these unused lambda parameters.(½´õ•úÿÿÿÿ8Æ–¶¦å1J$648ea201-3015-46de-a6eb-53fb0d76f5ec
+ikotlin:S125×"Remove this commented out code.(Ë¬í˜ûÿÿÿÿ8à–¶¦å1J$bceaf720-de36-4c61-8109-05770e85401f
+ikotlin:S125ä"Remove this commented out code.(Ëµûëüÿÿÿÿ8ä–¶¦å1J$4102bc2c-3a29-4575-b224-cb7505242bca
+dkotlin:S125Î"Remove this commented out code.(¶šìâ8æ–¶¦å1J$75d217af-97ff-4405-982d-0e8f41695c51
+ikotlin:S125ü"Remove this commented out code.(›¤¬§øÿÿÿÿ8ç–¶¦å1J$610ac4fb-7283-4032-9383-b998699a0b74
+dkotlin:S125‚"Remove this commented out code.(Ì£¹“8é–¶¦å1J$a3d9415e-65a9-44c2-8715-7c93382ca990
+dkotlin:S125"Remove this commented out code.(Êñâ›8ë–¶¦å1J$ceb0a9fa-a4ab-4aa6-8df7-d439f48e93e5
+skotlin:S108Ë")Either remove or fill this block of code.(“²¸æşÿÿÿÿ8†—¶¦å1J$8eaddd34-51d0-4342-8eac-9b0880235350
+nkotlin:S108Ì")Either remove or fill this block of code.(æªÍõ8†—¶¦å1J$882bb881-ffca-4cdf-934d-4733a9c900ab
+skotlin:S108Í")Either remove or fill this block of code.(”œòÊşÿÿÿÿ8†—¶¦å1J$50b77fc1-fe17-4b8b-bb7b-afbe73e73768
+mkotlin:S108Î")Either remove or fill this block of code.(¸é™8†—¶¦å1J$388cbd50-392d-423a-b4ab-583a40dd84e1
+nkotlin:S108Ï")Either remove or fill this block of code.(˜±šÁ8†—¶¦å1J$17a04456-651c-4fae-b456-1fb15e1c694a
+_kotlin:S11285"Remove this unused import.(Ğ˜¶Í8™—¶¦å1J$2a9f2f77-4498-47e9-abf5-bfcdafa371d8
+dkotlin:S11286"Remove this unused import.(õ³Ïªıÿÿÿÿ8™—¶¦å1J$a8190f7b-778d-40f7-9008-675f69084f92
+_kotlin:S11287"Remove this unused import.(³ú¸8š—¶¦å1J$d3e147e6-e8b2-4d7a-b607-9cc4cc000862
+_kotlin:S11288"Remove this unused import.(ƒßÛò8š—¶¦å1J$d0145bf7-254d-4817-b899-1902fa70c871
+˜kotlin:S1871µ"MThis branch's code block is the same as the block for the branch on line 174.(ñ•ÍĞøÿÿÿÿ8Ÿ—¶¦å1J$25e5de8b-22c9-465e-959b-077baea4f314
+nkotlin:S1874Ó"#Deprecated code should not be used.(¸ğØëıÿÿÿÿ8£—¶¦å1J$515518e2-6db5-44ff-bb7c-b223dd3064d8
+skotlin:S1066’".Merge this "if" statement with the nested one.(¤š‡x8²—¶¦å1J$3a579dc6-09cb-467f-bc54-b74c19370a6b

@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">trainer</string>
+    <string name="company">Sports2i</string>
+
+    <!--아이디 -->
+    <string name="login_id">아이디</string>
+    <string name="id_empty">아이디를 입력해주세요.</string>
+    <string name="not_enroll_id">등록되지 않은 아이디 입니다</string>
+    <string name="email_verify">이메일 인증</string>
+    <string name="email_code_send">등록된 이메일로 인증코드를 발송했습니다.</string>
+    <string name="fault_code">잘못된 인증코드입니다</string>
+    <string name="empty_code">코드를 입력해주세요.</string>
+    <!--비밀번호 -->
+    <string name="password">비밀번호</string>
+    <string name="password_find">비밀번호 찾기</string>
+    <string name="new_password_confirm">새 비밀번호 확인</string>
+    <string name="fail_password">비밀번호가 일치하지 않습니다.</string>
+    <string name="equal_password">비밀번호가 일치합니다.</string>
+    <string name="new_password">새 비밀번호</string>
+    <string name="password_change">비밀번호 변경</string>
+    <string name="password_change_success">비밀번호가 변경되었습니다.</string>
+    <string name="password_change_fail">비밀번호 변경 실패</string>
+    <!-- 로그인 -->
+    <string name="login">로그인</string>
+    <string name="logout">로그아웃</string>
+    <string name="login_auto_state"> 로그인 상태 유지</string>
+    <string name="login_fail">로그인 실패</string>
+    <!-- 버튼 -->
+    <string name="complete">완료</string>
+    <string name="new_write">새글쓰기</string>
+    <string name="training_registratio">훈련 등록</string>
+    <string name="comment_enroll">코멘트 등록</string>
+    <string name="nutrition_enroll">식단 제출</string>
+    <string name="edit">편집</string>
+    <string name="add">추가</string>
+    <string name="survey_register">설문등록</string>
+    <string name="survey_write">설문 항목 등록</string>
+    <string name="exercise_enroll">훈련등록</string>
+    <string name="user_info_edit">회원정보 수정</string>
+    <string name="comment_write">코멘트를 작성해주세요</string>
+    <string name="load_preset">프리셋 불러오기</string>
+    <string name="save_preset">프리셋 저장</string>
+    <string name="next">다음</string>
+    <string name="confirm">확인</string>
+    <string name="load_health_data">생체 데이터를 불러오는 중입니다..</string>
+    <string name="fail_load_health_data">생체 데이터를 불러오는데 실패 했습니다.</string>
+
+    <!-- 텍스트 -->
+    <string name="group_title">그룹별 정보</string>
+    <string name="group_member_title">그룹원별 정보</string>
+    <string name="my_exercise_title">내 운동룸</string>
+    <string name="training_status_title">훈련현황</string>
+    <string name="hint_write">작성해주세요</string>
+    <string name="hint_input">내용을 입력하세요</string>
+    <string name="survey">설문</string>
+    <string name="survey_item">설문 항목</string>
+    <string name="notice">공지사항</string>
+    <string name="group_live">그룹원 현황</string>
+    <string name="statistics">통계</string>
+    <string name="pain">통증</string>
+    <string name="pain_status">통증 현황</string>
+    <string name="pain_info">통증상세</string>
+    <string name="pain_stage">통증단계</string>
+    <string name="pain_input">통증입력</string>
+    <string name="statistics_etc">기타 통계</string>
+    <string name="biometric_fail">지문인식 실패</string>
+    <string name="biometric_no_hardware">"기기에서 생체 인증을 지원하지 않습니다.</string>
+    <string name="biometric_permission">"생체 인증 권한이 없습니다.</string>
+    <string name="biometric_not_available">"생체 인증을 사용할 수 없습니다.</string>
+    <string name="biometric_un_enroll">생체 인식 정보가 등록되어 있지 않습니다.</string>
+    <string name="biometric_move_to_enroll">지문 등록이 필요합니다. 지문등록 설정화면으로 이동하시겠습니까?</string>
+    <string name="healthconnect_install_message">헬스커넥트 앱이 설치되어 있지 않습니다. 설치하시겠습니까?</string>
+    <string name="network_empty_date">응답 데이터가 비어 있습니다.</string>
+    <string name="network_empty_sucess_date">응답 데이터가 비어 있습니다.</string>
+    <string name="network_login_faile">로그인 실패."</string>
+    <string name="network_error">네트워크 오류</string>
+    <string name="network_fail">네트워크 응답실패</string>
+    <string name="network_data_change_error">변환 오류</string>
+    <string name="fragment_training_enroll">훈련등록</string>
+    <string name="fragment_survey_enroll">설문 항문등록</string>
+    <string name="fragment_diet_comments_enroll">식단 코멘트</string>
+    <string name="nutrition_comments_enroll">식단 코멘트 등록</string>
+    <string name="nutrition_images_enroll">식단제출 하시겠습니까?</string>
+    <string name="select_all"> 전체선택</string>
+    <string name="exercise_time">운동시간</string>
+    <string name="exercise_name">훈련명</string>
+    <string name="exercise">훈련</string>
+    <string name="exercise_goal">목표</string>
+    <string name="exercise_goal_enter">수치 입력</string>
+    <string name="exercise_goal_name">목표 명</string>
+    <string name="exercise_goal_add">목표추가</string>
+    <string name="average">평균</string>
+    <string name="exercise_value">수치</string>
+    <string name="exercise_today">오늘 운동</string>
+    <string name="exercise_create">운동생성</string>
+    <string name="training_stastus">훈련 현황</string>
+    <string name="total_achievement">종합성취도</string>
+    <string name="diet_stastus">식단 현황</string>
+    <string name="nutrition_exit">제출된 식단</string>
+    <string name="nutrition_exit_empty">제출된 식단이 없습니다.</string>
+    <string name="nutrition_stastus">식단현황</string>
+    <string name="diet_view">식단관리</string>
+    <string name="nutrition_view">식단 관리</string>
+    <string name="nutrition_eat_evaluation">섭취 평가</string>
+    <string name="more">더보기</string>리
+    <string name="exercise_preview">미리보기</string>
+    <string name="training_confirm">훈련확인</string>
+    <string name="exercise_detail">운동상세</string>
+    <string name="save_preset_message">프리셋이 저장되었습니다!</string>
+    <string name="delete_preset_message">프리셋이 삭제되었습니다!</string>
+    <string name="dawn">새벽</string>
+    <string name="morning">오전</string>
+    <string name="afternoon">오후</string>
+    <string name="dinner">저녁</string>
+    <string name="night">야간</string>
+    <string name="create_training">훈련이 생성되었습니다.</string>
+    <string name="enroll_training">훈련이 등록되었습니다.</string>
+    <string name="enroll_training_error">훈련이 등록 실패했습니다.</string>
+    <string name="enroll_nutrition_comment">코멘트가 등록되었습니다.</string>
+    <string name="enroll_notice">공지사항이 등록 되었습니다.</string>
+    <string name="update_notice">공지사항이 수정 되었습니다.</string>
+
+    <string name="performance">훈련성취도</string>
+    <string name="injury">부상위험도</string>
+    <string name="total_training_over">총 훈련 부하</string>
+    <string name="sleep">수면</string>
+    <string name="sleepDuration">수면시간</string>
+    <string name="sleepQuality">수면품질</string>
+    <string name="nutrition">영양섭취</string>
+
+    <string name="empty_data">데이터가 없습니다.</string>
+    <string name="empty_training_data"> 등록된 훈련이 없습니다.</string>
+    <string name="empty_nutrition_data"> 등록된 식단이 없습니다.</string>
+    <string name="ingredient_search_empty">검색 데이터가 없습니다.</string>
+    <string name="empty_exercise">운동 정보가 없습니다.</string>
+    <string name="empty_select_user">선택된 선수가 없습니다.</string>
+    <string name="survey_empty">등록된 설문 항목이 없습니다</string>
+    <string name="ingredient_info">식약청 제품 허가정보</string>
+    <string name="ingredient_info_detail">(출처 의약품안전나라 - 의약품 통합정보시스템)</string>
+
+    <string name="save">저장</string>
+    <string name="cancel">취소</string>
+    <string name="modify">수정</string>
+    <string name="delete">삭제</string>
+    <string name="detail">자세히</string>
+    <string name="load">불러오기</string>
+    <string name="resume">재시작</string>
+    <string name="pause">일시중지</string>
+    <string name="enroll">등록</string>
+    <string name="update">수정</string>
+    <string name="search_text">검색어를 입력하세요</string>
+
+    <string name="video_encoding">동영상 압축 중...</string>
+
+    <string name="camera">Camera</string>
+    <string name="capture">Capture</string>
+    <string name="stop">Stop</string>
+    <string name="Resume">Resume</string>
+    <string name="Start">Start</string>
+
+    <string name="SD">SD ( 720x480 )</string>
+    <string name="HD">HD ( 1280x720 )</string>
+    <string name="FHD">FHD ( 1920x1080 )</string>
+    <string name="FHD2">FHD2 ( 1920x1080 )</string>
+
+</resources>

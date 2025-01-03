@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/ll_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ui.activity.TrainingRegistrationActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:letterSpacing="0.05"
+            android:text="@string/fragment_training_enroll"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_alignParentStart="true">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:src="@mipmap/ic_back"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                tools:ignore="RtlHardcoded" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/dateSelectionView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="vertical" />
+
+
+                <com.sports2i.trainer.ui.view.CustomSpinner
+                    android:id="@+id/spinner_group"
+                    style="@style/drop_down_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateSelectionView" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layout_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                tools:ignore="RelativeOverlap"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dateSelectionView"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_select"
+                    android:layout_width="16dp"
+                    android:layout_height="10dp"
+                    android:layout_marginEnd="4dp"
+                    android:src="@mipmap/ic_check"
+                    android:tint="@color/round_color" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/select_all"
+                    android:textColor="@color/round_color"
+                    android:textSize="13sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--            <CheckBox-->
+<!--                    android:id="@+id/cb_select_all"-->
+<!--                    style="@style/text_roboto_R3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:button="@drawable/ic_checkbox1"-->
+<!--                    android:text="@string/select_all"-->
+<!--                    android:textColor="@color/color_text_check"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/spinner_group"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/tv_group_date" />-->
+
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_group"
+                />
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:visibility="invisible"
+                app:dotsWidthFactor="1"
+                app:dotsSize="6dp"
+                app:dotsSpacing="3dp"
+                app:dotsColor="@color/border_color"
+                app:selectedDotColor="@color/round_color"
+                app:layout_constraintTop_toBottomOf="@+id/view_pager"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+
+<!--                <androidx.core.widget.NestedScrollView-->
+<!--                    android:id="@+id/layout_group_user"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/spinner_group">-->
+
+<!--                    <androidx.recyclerview.widget.RecyclerView-->
+<!--                        android:id="@+id/rv_group_user"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="14dp"-->
+<!--                        android:clipToPadding="false"-->
+<!--                        tools:itemCount="30"-->
+<!--                        tools:listitem="@layout/item_group_user"-->
+
+<!--                        />-->
+<!--                </androidx.core.widget.NestedScrollView>-->
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/indicator"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/enroll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                >
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.4" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_vertical2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2" />
+
+                <TextView
+                    android:id="@+id/tv_exercise_tiem"
+                    style="@style/text_roboto_R2"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:text="@string/exercise_time"
+                    android:gravity="center|start"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <com.sports2i.trainer.ui.view.CustomSpinner
+                    android:id="@+id/spinner_exercise_time"
+                    style="@style/drop_down_secondary"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_exercise_name"
+                    style="@style/text_roboto_R2"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:gravity="center|start"
+                    android:text="@string/exercise_name"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_exercise_tiem"
+                    app:layout_constraintTop_toTopOf="@+id/spinner_exercise_name" />
+
+                <com.sports2i.trainer.ui.view.CustomSpinner
+                    android:id="@+id/spinner_exercise_name"
+                    style="@style/drop_down_secondary"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_exercise_time" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_exercise_direct"
+                    style="@style/input_box_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_exercise_name" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_exercise_item"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/et_exercise_direct"
+                    />
+
+            <TextView
+                android:id="@+id/btn_exercise_goal_add"
+                style="@style/text_roboto_R2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exercise_goal_add"
+                android:textColor="@color/primary"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_exercise_item"
+                />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_exercise_preview"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="@color/transparent"
+                    android:textColor="@color/primary"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/exercise_preview"
+                    style="@style/text_roboto_R2"
+                    android:layout_marginEnd="6dp"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_exercise_goal_add"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_center"
+                    app:layout_constraintWidth_percent="0.48" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_center"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_exercise_create"
+                    style="@style/button_primary"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="6dp"
+                    android:text="@string/exercise_create"
+                    android:fontFamily="@font/roboto_r"
+                    android:textSize="14dp"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_exercise_goal_add"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline_center"
+                    app:layout_constraintWidth_percent="0.48" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/preview_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                >
+            <LinearLayout
+                android:id="@+id/layout_priview_dawn_exercise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingBottom="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_exercise_period"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        style="@style/text_roboto_R1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="14dp"
+                        android:text="@string/dawn"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/tv_priview_dawn_exercise_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:layout_gravity="end"
+                        style="@style/text_roboto_R2"
+                        android:textColor="@color/primary"
+                        android:text="수정" ></TextView>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_priview_dawn_exercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:itemCount="1"
+                    />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_priview_morning_exercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="30dp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_priview_dawn_exercise"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            style="@style/text_roboto_R1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingBottom="14dp"
+                            android:text="@string/morning"
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+                            android:id="@+id/tv_priview_morning_exercise_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:layout_gravity="end"
+                            style="@style/text_roboto_R2"
+                            android:textColor="@color/primary"
+                            android:text="수정" ></TextView>
+
+                    </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_priview_morning_exercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:itemCount="1"
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_priview_afternoon_exercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="30dp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_priview_morning_exercise"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            style="@style/text_roboto_R1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingBottom="14dp"
+                            android:text="@string/afternoon"
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+                            android:id="@+id/tv_priview_afternoon_exercise_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:layout_gravity="end"
+                            style="@style/text_roboto_R2"
+                            android:textColor="@color/primary"
+                            android:text="수정" ></TextView>
+
+                    </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_priview_afternoon_exercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:itemCount="1"
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_priview_dinner_exercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:paddingBottom="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_priview_afternoon_exercise"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            style="@style/text_roboto_R1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingBottom="14dp"
+                            android:text="@string/dinner"
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+                            android:id="@+id/tv_priview_dinner_exercise_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:layout_gravity="end"
+                            style="@style/text_roboto_R2"
+                            android:textColor="@color/primary"
+                            android:text="수정" ></TextView>
+
+                    </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_priview_dinner_exercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:itemCount="1"
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_priview_night_exercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_priview_dinner_exercise"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            style="@style/text_roboto_R1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingBottom="14dp"
+                            android:text="@string/night"
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+                            android:id="@+id/tv_priview_night_exercise_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:layout_gravity="end"
+                            style="@style/text_roboto_R2"
+                            android:textColor="@color/primary"
+                            android:text="수정" ></TextView>
+
+                    </LinearLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_priview_night_exercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:itemCount="1"
+                    />
+                </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_load_preset"
+                style="@style/button_secondary"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:text="@string/load_preset"
+                android:fontFamily="@font/roboto_r"
+                android:textSize="14dp"
+                app:layout_constraintTop_toBottomOf="@+id/layout_priview_night_exercise"
+                app:layout_constraintEnd_toStartOf="@+id/btn_save_preset"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_save_preset"
+                    style="@style/button_primary"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/save_preset"
+                    android:fontFamily="@font/roboto_r"
+                    android:textSize="14dp"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintStart_toEndOf="@+id/btn_load_preset"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_priview_night_exercise"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_exercise_period"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기간 설정"
+                    style="@style/text_roboto_B2"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="56dp"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_load_preset"
+                    app:layout_constraintStart_toStartOf="parent"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/tv_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/input_box_edit"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:gravity="center"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_exercise_period"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="~"
+                    app:layout_constraintStart_toEndOf="@+id/tv_start_date"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_exercise_period"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_start_date"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/input_box_edit"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:gravity="center"
+                    android:layout_marginStart="6dp"
+                    app:layout_constraintStart_toEndOf="@+id/space"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_exercise_period"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/calendar_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_calendar_20"
+                    app:layout_constraintStart_toEndOf="@+id/tv_end_date"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_end_date"
+                    app:layout_constraintTop_toTopOf="@+id/tv_end_date"
+                    android:layout_marginStart="8dp"/>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_exercise_enroll"
+                    style="@style/button_primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/roboto_r"
+                    android:textSize="14dp"
+                    android:text="@string/exercise_enroll"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_start_date"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                android:background="@color/background_color"
+                app:layout_constraintTop_toBottomOf="@+id/dateSelectionView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                >
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="240dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/bottomSheetContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ui.fragment.group.GroupFragment"
+        >
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group_title"
+                style="@style/text_roboto_R"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/img_left_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="visible"
+                android:background="@drawable/ic_left_arrow_able"
+                android:layout_marginRight="24dp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_group_date"
+                app:layout_constraintTop_toTopOf="@+id/tv_group_date"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_group_date"
+                />
+
+            <TextView
+                android:id="@+id/tv_group_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0000.00.00"
+                style="@style/text_roboto_R1"
+                android:textColor="@color/black"
+                android:layout_marginEnd="62dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/title"
+                app:layout_constraintBottom_toBottomOf="@+id/title"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/img_right_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/ic_right_arrow_able"
+                app:layout_constraintStart_toEndOf="@+id/tv_group_date"
+                app:layout_constraintTop_toTopOf="@+id/tv_group_date"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_group_date"
+                />
+
+
+
+        <com.sports2i.trainer.ui.view.CustomSpinner
+            android:id="@+id/spinner_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="16dp"
+            style="@style/drop_down_primary"
+            app:layout_constraintTop_toBottomOf="@+id/tv_group_date"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/notice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_group">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="게시판"
+                    style="@style/text_roboto_R1"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_notice_write"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/text_roboto_R2"
+                    android:textColor="@color/primary"
+                    android:text="@string/new_write"
+                    />
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="16dp"
+                app:strokeColor="@color/border_color"
+                app:cardBackgroundColor="@color/white"
+                app:cardUseCompatPadding="true"
+            >
+
+<!--                app:cardUseCompatPadding="true"-->
+<!--                app:strokeWidth="1dp"-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:paddingTop="24dp"
+                    android:paddingBottom="12dp"
+                    >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:overScrollMode="never"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_total_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|bottom"
+                    android:text="전체보기"
+                    style="@style/text_roboto_R3"
+                    android:textColor="@color/primary"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_notice"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/group_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/notice_layout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/group_live"
+                        android:textColor="@color/black"
+                        style="@style/text_roboto_R1"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_training_enroll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary"
+                        style="@style/bg_roubnd_primary"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:visibility="gone"
+                        android:fontFamily="@font/roboto_r"
+                        android:textSize="14dp"
+                        android:text="@string/training_registratio"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_comment_enroll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary"
+                        style="@style/bg_roubnd_primary"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:visibility="gone"
+                        android:fontFamily="@font/roboto_r"
+                        android:textSize="14dp"
+                        android:text="@string/comment_enroll"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/status_tab_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/background_color"
+                    android:layout_marginTop="12dp"
+                    android:paddingStart="4dp"
+                    app:tabSelectedTextColor="@color/black"
+                    app:tabTextColor="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:tabGravity="start"
+                    app:tabMode="fixed"
+                    app:tabIndicatorColor="@color/tab_circle"
+                    app:tabIndicator="@drawable/custom_indicator_circle"
+                    app:tabRippleColor="@null"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_detail_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:gravity="right"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginEnd="16dp"
+                    style="@style/text_roboto_R2"
+                    android:textColor="@color/primary"
+                    android:text="@string/detail" />
+                </LinearLayout>
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/status_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/status_tab_layout"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_status_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    style="@style/text_roboto_R2"
+                    android:textColor="@color/gray2"
+                    android:paddingTop="47dp"
+                    android:paddingBottom="47dp"
+                    android:text="@string/empty_data"
+                    app:layout_constraintTop_toBottomOf="@id/status_tab_layout"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/statistics_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/group_layout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/statistics"
+                        android:textColor="@color/black"
+                        style="@style/text_roboto_R1"
+                        />
+
+
+                </LinearLayout>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/statistics_tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_color"
+                    app:tabSelectedTextColor="@color/black"
+                    app:tabTextColor="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:tabGravity="start"
+                    app:tabMode="scrollable"
+                    app:tabMinWidth="0dp"
+                    android:paddingStart="3dp"
+                    app:tabIndicatorColor="@color/tab_circle"
+                    app:tabIndicator="@drawable/custom_indicator_circle"
+                    app:tabRippleColor="@null"
+                     />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/checkbox_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@drawable/round_text_black"
+                    android:background="@drawable/round_button_black"
+                    android:checked="true"
+                    android:textSize="10sp"
+                    android:layout_gravity="end"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:button="@null"
+                    android:text="Today"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/checkbox_weeks"
+                    />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkbox_weeks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="12dp"
+                        android:textColor="@drawable/round_text_black"
+                        android:background="@drawable/round_button_black"
+                        android:checked="false"
+                        android:textSize="10sp"
+                        android:layout_gravity="end"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:button="@null"
+                        android:text="1주 평균"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/checkbox_month"
+                        />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkbox_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="12dp"
+                        android:textColor="@drawable/round_text_black"
+                        android:background="@drawable/round_button_black"
+                        android:checked="false"
+                        android:textSize="10sp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:button="@null"
+                        android:text="4주 평균"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/graph_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                   />
+
+                <TextView
+                    android:id="@+id/tv_graph1_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    style="@style/text_roboto_R2"
+                    android:textColor="@color/gray2"
+                    android:paddingTop="47dp"
+                    android:paddingBottom="47dp"
+                    android:text="@string/empty_data"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/survey_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/statistics_layout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/survey"
+                        android:textColor="@color/black"
+                        style="@style/text_roboto_R1"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_survey_write"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary"
+                        style="@style/text_roboto_R2"
+                        android:text="@string/survey_register"
+
+                        />
+
+                </LinearLayout>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/statistics_tab_layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_color"
+                    app:tabSelectedTextColor="@color/black"
+                    app:tabTextColor="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/progressBar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:tabGravity="start"
+                    app:tabMode="scrollable"
+                    app:tabIndicatorColor="@color/tab_circle"
+                    app:tabIndicator="@drawable/custom_indicator_circle"
+                    app:tabRippleColor="@null"
+                    />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkbox_today2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="12dp"
+                        android:textColor="@drawable/round_text_black"
+                        android:background="@drawable/round_button_black"
+                        android:checked="true"
+                        android:textSize="10sp"
+                        android:layout_gravity="end"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:button="@null"
+                        android:text="Today"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/checkbox_weeks2"
+                        />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkbox_weeks2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="12dp"
+                        android:textColor="@drawable/round_text_black"
+                        android:background="@drawable/round_button_black"
+                        android:checked="false"
+                        android:textSize="10sp"
+                        android:layout_gravity="end"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:button="@null"
+                        android:text="1주 평균"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/checkbox_month2"
+                        />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkbox_month2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="12dp"
+                        android:textColor="@drawable/round_text_black"
+                        android:background="@drawable/round_button_black"
+                        android:checked="false"
+                        android:textSize="10sp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:button="@null"
+                        android:text="4주 평균"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/graph_layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="56dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_graph2_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    style="@style/text_roboto_R2"
+                    android:textColor="@color/gray2"
+                    android:paddingTop="47dp"
+                    android:paddingBottom="47dp"
+                    android:layout_marginBottom="56dp"
+                    android:text="@string/empty_data"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                android:background="@color/background_color"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_group"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="240dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

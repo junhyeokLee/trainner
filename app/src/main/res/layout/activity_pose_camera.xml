@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ~ Copyright 2023 The TensorFlow Authors. All Rights Reserved.
+    ~
+    ~ Licensed under the Apache License, Version 2.0 (the "License");
+    ~ you may not use this file except in compliance with the License.
+    ~ You may obtain a copy of the License at
+    ~
+    ~       http://www.apache.org/licenses/LICENSE-2.0
+    ~
+    ~ Unless required by applicable law or agreed to in writing, software
+    ~ distributed under the License is distributed on an "AS IS" BASIS,
+    ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    ~ See the License for the specific language governing permissions and
+    ~ limitations under the License.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camera_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/view_finder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:scaleType="fillStart"
+        />
+    <com.sports2i.trainer.ui.view.OverlayPushUpView
+        android:id="@+id/overlayPushUp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        />
+    <com.google.mediapipe.examples.poselandmarker.OverlaySquatView
+        android:id="@+id/overlaySquat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        />
+    <com.google.mediapipe.examples.poselandmarker.OverlayDeadLiftView
+        android:id="@+id/overlayDeadLift"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        />
+    <com.google.mediapipe.examples.poselandmarker.OverlayLungeView
+        android:id="@+id/overlayLunge"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <TextView
+        android:id="@+id/quality_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HD"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/text_roboto_B3"
+        android:textSize="21sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/text_roboto_B"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_mili_seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=".00"
+        app:layout_constraintTop_toTopOf="@+id/tv_time"
+        app:layout_constraintBottom_toBottomOf="@id/tv_time"
+        app:layout_constraintStart_toEndOf="@+id/tv_time"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/white"
+        style="@style/text_roboto_B"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/countText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="COUNT : 0"
+        android:visibility="visible"
+        android:background="@drawable/correct_layout"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/capture_button"
+        app:layout_constraintTop_toTopOf="@+id/capture_button"
+        app:layout_constraintBottom_toBottomOf="@+id/capture_button"
+        />
+
+    <TextView
+        android:id="@+id/incorrectCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="FAIL: 0"
+        android:visibility="visible"
+        android:gravity="center"
+        android:background="@drawable/incorrect_layout"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/capture_button"
+        app:layout_constraintTop_toBottomOf="@+id/countText"
+        />
+
+    <TextView
+        android:id="@+id/incorrectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text=""
+        android:visibility="gone"
+        android:gravity="center"
+        android:background="@drawable/incorrect_text_layout"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <ImageButton
+        android:id="@+id/capture_button"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:background="@drawable/ic_start"
+        android:contentDescription="@string/capture"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="96dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/stop_button"
+        android:background="@drawable/ic_stop"
+        android:visibility="invisible"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/stop"
+        android:translationX="48dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/capture_button"
+        app:layout_constraintTop_toTopOf="@+id/capture_button"
+        app:layout_constraintBottom_toBottomOf="@+id/capture_button"
+        tools:ignore="ImageContrastCheck" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

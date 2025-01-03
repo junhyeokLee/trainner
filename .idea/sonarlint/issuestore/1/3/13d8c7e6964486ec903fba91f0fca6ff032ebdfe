@@ -1,0 +1,6 @@
+
+Qkotlin:S1172I"4Remove this unused function parameter "convertView".(¾±Ş„ÿÿÿÿÿ
+Lkotlin:S1172m"4Remove this unused function parameter "convertView".(¶…ØÆ
+kotlin:S6611X"rMap values should be accessed safely. Using the non-null assertion operator here can throw a NullPointerException.(Ãƒòòüÿÿÿÿ
+Kkotlin:S1481n".Remove this unused "childText" local variable.(†«Á¯ùÿÿÿÿ
+Zkotlin:S6517"BMake this interface functional or replace it with a function type.(¿ßÇ»

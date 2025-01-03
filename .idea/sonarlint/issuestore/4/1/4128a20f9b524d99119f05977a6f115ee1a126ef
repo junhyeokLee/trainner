@@ -1,0 +1,13 @@
+
+Rkotlin:S1172¸"-Remove this unused function parameter "code".(ôôÅçøÿÿÿÿ8„ñÆƒä1
+—kotlin:S6611­"rMap values should be accessed safely. Using the non-null assertion operator here can throw a NullPointerException.(þžéþÿÿÿÿ8ñÆƒä1
+—kotlin:S6611±"rMap values should be accessed safely. Using the non-null assertion operator here can throw a NullPointerException.(–Ï›ûÿÿÿÿ8ñÆƒä1
+—kotlin:S6611Ï"rMap values should be accessed safely. Using the non-null assertion operator here can throw a NullPointerException.(¶ž£¿úÿÿÿÿ8Ÿ’°‡ä1
+—kotlin:S6611Ó"rMap values should be accessed safely. Using the non-null assertion operator here can throw a NullPointerException.(¶ž£¿úÿÿÿÿ8Ÿ’°‡ä1
+>kotlin:S125Ë"Remove this commented out code.(äáÛ8œñÆƒä1
+Ckotlin:S125ä"Remove this commented out code.(í°˜ÿÿÿÿÿ8£’°‡ä1
+Zkotlin:S1481º"5Remove this unused "heightFixedValue" local variable.(£çÝìüÿÿÿÿ8Å’°‡ä1
+>kotlin:S1128"Remove this unused import.(ÄÅæùÿÿÿÿ8ÌñÆƒä1
+>kotlin:S1128"Remove this unused import.(Ò²÷ÿúÿÿÿÿ8ÑéŠ‡ä1
+Skotlin:S6529Ž".Replace collection size check with "isEmpty()"(ÂçŒ ÿÿÿÿÿ8áñÆƒä1
+Skotlin:S6529Á".Replace collection size check with "isEmpty()"(ûšù„ùÿÿÿÿ8ãñÆƒä1

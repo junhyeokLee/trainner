@@ -1,0 +1,9 @@
+
+Tkotlin:S1172¼"/Remove this unused function parameter "status".(È†î¼üÿÿÿÿ8úª™Æ1
+Zkotlin:S6615ô";Remove this variable, which is assigned but never accessed.(ÄÔå>8¥«™Æ1
+lkotlin:S6532ê"LReplace this throw expression with error("recordingState in unknown state").(Ç‰„§8µ«™Æ1
+Ckotlin:S125Û"Remove this commented out code.(äôŠøÿÿÿÿ8õ«™Æ1
+Ckotlin:S125Ş"Remove this commented out code.(¿½å×øÿÿÿÿ8÷«™Æ1
+\kotlin:S1144Ù"7Remove this unused private "bindRecordAnalysis" method.(ÕõÜˆÿÿÿÿÿ8“¬™Æ1
+Ykotlin:S1144â"4Remove this unused private "resetUIandState" method.(Ú‡¤üÿÿÿÿ8™¬™Æ1
+Mkotlin:S1066\".Merge this "if" statement with the nested one.(Å××8¦¬™Æ1

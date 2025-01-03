@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/dialog_custom.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_roboto_R1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="피로"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            >
+
+            <SeekBar
+                android:id="@+id/progressSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="10"
+                android:min="1"
+                android:layout_marginBottom="8dp"
+                android:progress="5" />
+
+            <LinearLayout
+                android:id="@+id/linearProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

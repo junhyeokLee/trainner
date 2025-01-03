@@ -1,0 +1,10 @@
+
+Wkotlin:S6619Š"7Remove this useless non-null check, it always succeeds.(·òò¨8¼³Íä1
+>kotlin:S125ñ"Remove this commented out code.(Óê·Õ8Í³Íä1
+Dkotlin:S6524Ê"Make this collection immutable.(šºÁüÿÿÿÿ8ƒµÍä1
+Dkotlin:S6524Î"Make this collection immutable.(ÔÒ¥äıÿÿÿÿ8ƒµÍä1
+?kotlin:S6524…"Make this collection immutable.(“å´¹8ƒµÍä1
+>kotlin:S6524È"Make this collection immutable.(–¬ãJ8„µÍä1
+zkotlin:S1186®"ZAdd a nested comment explaining why this function is empty or complete the implementation.(µ‰äî8×Šëÿä1
+kotlin:S1186±"ZAdd a nested comment explaining why this function is empty or complete the implementation.(° ÄÒıÿÿÿÿ8ØŠëÿä1
+kotlin:S1186²"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ûŒÜúÿÿÿÿ8ØŠëÿä1

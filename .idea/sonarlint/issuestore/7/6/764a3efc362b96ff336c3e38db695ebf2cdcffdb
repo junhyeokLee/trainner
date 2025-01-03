@@ -1,0 +1,9 @@
+
+Þkotlin:S6532”"¿Replace this if expression with require(runningMode == RunningMode.LIVE_STREAM) { "Attempting to call detectLiveStream" +
+                        " while not using RunningMode.LIVE_STREAM" }.(§îáÃüÿÿÿÿ
+Ìkotlin:S6532Ì"²Replace this if expression with require(runningMode == RunningMode.VIDEO) { "Attempting to call detectVideoFile" +
+                        " while not using RunningMode.VIDEO" }.(·¿Ð«
+Íkotlin:S6532¡"®Replace this if expression with require(runningMode == RunningMode.IMAGE) { "Attempting to call detectImage" +
+                        " while not using RunningMode.IMAGE" }.(ÓûÍìýÿÿÿÿ
+¹kotlin:S6532Y"›Replace this if expression with checkNotNull(poseLandmarkerHelperListener) { "poseLandmarkerHelperListener must be set when runningMode is LIVE_STREAM." }.(ð®ÊÄùÿÿÿÿ
+kotlin:S3923M"[Remove this conditional structure or edit its code blocks so that they're not all the same.(”°¦¸ýÿÿÿÿ8à¥Ã¹à1

@@ -1,0 +1,13 @@
+
+>kotlin:S125ş"Remove this commented out code.(Óê·Õ8¬î³„ä1
+rkotlin:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(¸©–›8‚ï³„ä1
+Dkotlin:S6524ë"Make this collection immutable.(šºÁüÿÿÿÿ8‡ï³„ä1
+Dkotlin:S6524ô"Make this collection immutable.(ÿñæÿÿÿÿÿ8ˆï³„ä1
+?kotlin:S6524¼"Make this collection immutable.(á÷”¤8‰ï³„ä1
+?kotlin:S6524¸"Make this collection immutable.(û‰ƒ£8Šï³„ä1
+>kotlin:S6524"Make this collection immutable.(ÚÉÖ~8‹ï³„ä1
+gkotlin:S6517É"BMake this interface functional or replace it with a function type.(ÒÀÄÉûÿÿÿÿ8”ï³„ä1
+]kotlin:S6511×"=Merge chained "if" statements into a single "when" statement.(Õ–8—ï³„ä1
+€kotlin:S3923"[Remove this conditional structure or edit its code blocks so that they're not all the same.(½×ñÁÿÿÿÿÿ8šï³„ä1
+Kkotlin:S6519Ğ"+Replace "equals" with binary operator "==".(öûí‹8œï³„ä1
+Kkotlin:S6519Ğ"+Replace "equals" with binary operator "==".(öûí‹8œï³„ä1

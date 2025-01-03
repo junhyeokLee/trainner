@@ -1,0 +1,8 @@
+
+<kotlin:S125R"Remove this commented out code.(ßŒ÷n8è­È˜Ø1
+=kotlin:S125X"Remove this commented out code.(Ýëáµ8ñ­È˜Ø1
+Jkotlin:S1144`"+Remove this unused private "sample" method.(ÒÔÅ†8´Ÿ²‰Ñ1
+qkotlin:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ÿ€¾†8œŸ²‰Ñ1
+`kotlin:S6510"AMove "return" statements from all branches before "if" statement.(Ž´¿Ú8ÄŸ²‰Ñ1
+\kotlin:S6511"=Merge chained "if" statements into a single "when" statement.(’ò»Ý8ÈŸ²‰Ñ1
+[kotlin:S6511%"=Merge chained "if" statements into a single "when" statement.(ÝáÕ8ÈŸ²‰Ñ1

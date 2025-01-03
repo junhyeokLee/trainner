@@ -1,0 +1,11 @@
+
+Xkotlin:S1172Ş"8Use "_" instead of this unused lambda parameter "which".(ëˆô8‘°Ùã1
+Wkotlin:S1172İ"2Use "_" instead of these unused lambda parameters.(öÊÓ«ıÿÿÿÿ8ùŸëƒä1
+@kotlin:S6615Ç" Remove this useless initializer.(µ˜¼8úŸëƒä1
+Kkotlin:S6615ä"&The value assigned here is never used.(‘°“Äûÿÿÿÿ8úŸëƒä1
+`kotlin:S6619h"<Remove this useless null-safe access ?., it always succeeds.(İëıƒüÿÿÿÿ8û…òƒä1
+<kotlin:S125p"Remove this commented out code.(Ú—İ8Åüòƒä1
+>kotlin:S125˜"Remove this commented out code.(•íòÅ8ÿŸëƒä1
+9kotlin:S1128"Remove this unused import.(õåŞè8çêÙã1
+8kotlin:S1128
+"Remove this unused import.(‰¿Ë8çêÙã1

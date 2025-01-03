@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ui.fragment.myprofile.MyProfileFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingStart="16dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/black"
+                style="@style/text_roboto_R"
+                android:text="MY 프로필"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                app:cardCornerRadius="16dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    >
+
+            <FrameLayout
+                android:layout_width="72dp"
+                android:layout_height="72dp">
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="360dp">
+                <TextView
+                    android:id="@+id/logoImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textSize="32dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_circle_img"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                  />
+
+                <ImageView
+                    android:id="@+id/iv_profile_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    />
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            </FrameLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="이름"
+                            android:textSize="20sp"
+                            android:textColor="@color/black" android:layout_marginTop="8dp"
+                            android:layout_marginEnd="16dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/userEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="admin@sports2.com"
+                            android:textColor="@color/gray"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/profile_layout"
+                            ></TextView>
+
+
+                    </LinearLayout>
+
+               </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingStart="16dp"
+                android:paddingBottom="14dp"
+                android:paddingTop="14dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="프로필 수정"
+                    style="@style/text_roboto_R1"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    >
+                <ImageButton
+                    android:id="@+id/imgBtnEdit"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:maxWidth="18dp"
+                    android:maxHeight="18dp"
+                    android:src="@drawable/ic_edit"
+                    android:layout_gravity="right"
+                    android:backgroundTint="@color/transparent"
+                    />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingStart="16dp"
+                android:paddingBottom="14dp"
+                android:paddingTop="14dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="알림"
+                    style="@style/text_roboto_R1"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    >
+                    <Switch
+                        android:id="@+id/swAlarm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:backgroundTint="@color/transparent"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingStart="16dp"
+                android:paddingBottom="14dp"
+                android:paddingTop="14dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="캐시삭제"
+                    style="@style/text_roboto_R1"
+                    android:textColor="@color/black" />
+                
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:background="@color/gray"
+                    android:layout_marginStart="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvCacheSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:layout_marginStart="8dp"
+                    android:text="0.0 MB 사용중"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    >
+                    <TextView
+                        android:id="@+id/tvCacheDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="삭제하기"
+                        android:textColor="@color/red"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingStart="16dp"
+                android:paddingBottom="14dp"
+                android:paddingTop="14dp"
+                android:paddingEnd="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="현재버전"
+                    style="@style/text_roboto_R1"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/tvVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:layout_marginStart="8dp"
+                    android:text="1.0.0"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    >
+                    <TextView
+                        android:id="@+id/tvVersionUpdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="업데이트"
+                        android:textColor="@color/gray"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingStart="16dp"
+                android:paddingBottom="14dp"
+                android:paddingTop="14dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="약관보기"
+                    android:gravity="center"
+                    style="@style/text_roboto_R1"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    >
+                    <ImageView
+                        android:id="@+id/agreeView"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:padding="10dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/ic_right_arrow_enable"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingStart="16dp"
+                android:paddingBottom="14dp"
+                android:paddingTop="14dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="16dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="로그아웃"
+                    style="@style/text_roboto_R1"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    >
+                    <ImageView
+                        android:id="@+id/logOutView"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:padding="10dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/ic_right_arrow_enable"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/profile_layout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintVertical_bias="0.4"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/btn_complete">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/logo_img"-->
+<!--            android:layout_width="72dp"-->
+<!--            android:layout_height="72dp"-->
+<!--            android:text=""-->
+<!--            android:textSize="36dp"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:background="@drawable/bg_circle_img"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            >-->
+<!--        </TextView>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/editImage"-->
+<!--            android:layout_width="21dp"-->
+<!--            android:layout_height="21dp"-->
+<!--            android:background="@drawable/bg_edit_circle"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/user_email"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="admin@sports2.com"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/profile_layout"-->
+<!--        ></TextView>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_password_change"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="비밀번호 변경"-->
+<!--        style="@style/text_roboto_R2"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/user_email"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/new_password"-->
+<!--        style="@style/input_box_edit"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="14dp"-->
+<!--        android:autofillHints="@string/new_password"-->
+<!--        android:hint="@string/new_password"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:selectAllOnFocus="true"-->
+<!--        android:privateImeOptions="defaultInputmode=english"-->
+<!--        android:singleLine="true"-->
+<!--        android:imeOptions="actionNext"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_password_change"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/new_password_confirm"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:autofillHints="@string/new_password_confirm"-->
+<!--        android:hint="@string/new_password_confirm"-->
+<!--        style="@style/input_box_edit"-->
+<!--        android:imeOptions="actionDone"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:selectAllOnFocus="true"-->
+<!--        android:textCursorDrawable="@drawable/custom_cursor"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/new_password" />-->
+
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btn_complete"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:text="@string/user_info_edit"-->
+<!--        style="@style/button_primary"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/new_password_confirm"-->
+<!--        app:layout_constraintVertical_bias="0.2" />-->
+
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btn_loout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:text="@string/logout"-->
+<!--        style="@style/button_secondary"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_complete"-->
+<!--        app:layout_constraintVertical_bias="0.1" />-->
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

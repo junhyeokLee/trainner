@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/dialog_custom.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_round_white"
+        android:elevation="6dp"
+        android:scrollbars="none"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="false"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+
+    <!-- 메시지를 표시할 TextView -->
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="운동기록"
+                android:paddingTop="24dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="16dp"
+                style="@style/text_roboto_R"
+                android:textColor="@color/black" />
+
+
+    <!-- 버튼 영역 -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_exercise_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp" />
+
+            <LinearLayout
+        android:id="@+id/ll_button_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="24dp"
+        >
+
+        <!-- 부정적인 버튼 (취소) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/negativeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@color/transparent"
+            android:textColor="@color/primary"
+            android:text="취소"
+            />
+
+        <!-- 긍정적인 버튼 (확인) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/positiveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/round_button_able"
+            android:textColor="@color/white"
+            android:text="@string/save"
+            />
+    </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/bg_round_white"
+    android:elevation="6dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"
+        >
+
+        <!-- 메시지를 표시할 TextView -->
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기록하기"
+            style="@style/text_roboto_R1"
+            android:textColor="@color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            >
+
+            <!-- 부정적인 버튼 (취소) -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_video_data_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_button"
+                android:textColor="@color/white"
+                android:text="영상 및 데이터 기록"
+                />
+
+            <!-- 긍정적인 버튼 (확인) -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_data_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:textColor="@color/white"
+                android:text="데이터 기록"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

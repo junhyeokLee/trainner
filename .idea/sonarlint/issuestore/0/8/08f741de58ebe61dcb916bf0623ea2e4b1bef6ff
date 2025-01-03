@@ -1,0 +1,17 @@
+
+—kotlin:S6611ª"rMap values should be accessed safely. Using the non-null assertion operator here can throw a NullPointerException.(¶£¿úÿÿÿÿ8Ü±î™ß1
+—kotlin:S6611®"rMap values should be accessed safely. Using the non-null assertion operator here can throw a NullPointerException.(¶£¿úÿÿÿÿ8ß±î™ß1
+—kotlin:S6611Ñ"rMap values should be accessed safely. Using the non-null assertion operator here can throw a NullPointerException.(şéşÿÿÿÿ8â±î™ß1
+—kotlin:S6611Õ"rMap values should be accessed safely. Using the non-null assertion operator here can throw a NullPointerException.(–Ï›ûÿÿÿÿ8â±î™ß1
+>kotlin:S125ä"Remove this commented out code.(ç­Ï8ÿ½õ™ß1
+Zkotlin:S1481•"5Remove this unused "heightFixedValue" local variable.(£çİìüÿÿÿÿ8©³î™ß1
+Mkotlin:S1481ï"-Remove this unused "userName" local variable.(ŠÒĞƒ8©³î™ß1
+Dkotlin:S6524–"Make this collection immutable.(î˜æøÿÿÿÿ8Â³î™ß1
+Skotlin:S6529®".Replace collection size check with "isEmpty()"(ÂçŒ ÿÿÿÿÿ8Ã³î™ß1
+Skotlin:S6529İ".Replace collection size check with "isEmpty()"(ûšù„ùÿÿÿÿ8Ä³î™ß1
+Ekotlin:S6518“",Replace function call with indexed accessor.(ÂÅÚæ
+Jkotlin:S6518”",Replace function call with indexed accessor.(ŒŞÄ­şÿÿÿÿ
+Lkotlin:S6518•",Replace function call with indexed accessor.(ÒÇú‘8Í³î™ß1
+Lkotlin:S6518¤",Replace function call with indexed accessor.(ÂÅÚæ8Í³î™ß1
+Qkotlin:S6518¥",Replace function call with indexed accessor.(ŒŞÄ­şÿÿÿÿ8Í³î™ß1
+Lkotlin:S6518¦",Replace function call with indexed accessor.(ÒÇú‘8Í³î™ß1

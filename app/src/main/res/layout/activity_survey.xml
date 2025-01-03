@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color2"
+    tools:context=".ui.activity.SurveyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:letterSpacing="0.05"
+            android:text="@string/survey_register"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_alignParentStart="true">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:src="@mipmap/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                tools:ignore="RtlHardcoded" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <com.sports2i.trainer.ui.view.CustomSpinner
+            android:id="@+id/spinner_group"
+            style="@style/drop_down_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="RelativeOverlap">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_select"
+                android:layout_width="16dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="4dp"
+                android:src="@mipmap/ic_check"
+                android:tint="@color/round_color" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/select_all"
+                android:textColor="@color/round_color"
+                android:textSize="13sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible"
+        app:dotsWidthFactor="1"
+        app:dotsSize="6dp"
+        app:dotsSpacing="3dp"
+        app:dotsColor="@color/border_color"
+        app:selectedDotColor="@color/round_color" />
+
+    <RelativeLayout
+        android:id="@+id/layout_edit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="@string/survey_item"
+            tools:ignore="RelativeOverlap" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_edit"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:paddingEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/primary"
+            android:text="@string/complete"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="44dp"
+            android:layout_above="@id/txt_request"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:textColor="@color/round_color"
+            android:text="@string/survey_empty"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_above="@id/txt_request"
+            android:layout_alignParentTop="true"
+            android:animateLayoutChanges="true">
+
+            <RelativeLayout
+                android:id="@+id/layout_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_write"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:paddingStart="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/txt_add"
+                    android:background="@drawable/round_input"
+                    android:textColorHint="@color/border_color"
+                    android:textSize="14sp"
+                    android:hint="@string/hint_write"
+                    tools:ignore="RtlSymmetry" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_add"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/round_button_block"
+                    android:gravity="center"
+                    android:text="@string/add"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layout_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:animateLayoutChanges="true"/>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_request"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_button_block"
+            android:gravity="center"
+            android:text="@string/survey_write"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

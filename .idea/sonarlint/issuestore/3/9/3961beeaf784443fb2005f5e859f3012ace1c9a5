@@ -1,0 +1,16 @@
+
+Tkotlin:S1172"/Remove this unused function parameter "status".(È†î¼üÿÿÿÿ8§†¨Œá1
+Ykotlin:S1172—"4Use "_" instead of this unused lambda parameter "e".(ÃŒË’ÿÿÿÿÿ8§§Ñïà1
+Fkotlin:S6615”"&The value assigned here is never used.(éøÒ´8«†¨Œá1
+^kotlin:S6619Ã">Remove this useless non-null assertion !!, it always succeeds.(ÔÚ‹8Û©§Œá1
+^kotlin:S6619Ã">Remove this useless non-null assertion !!, it always succeeds.(ÔÚ‹8Û©§Œá1
+^kotlin:S6619Ã">Remove this useless non-null assertion !!, it always succeeds.(ÔÚ‹8Û©§Œá1
+^kotlin:S6619Ã">Remove this useless non-null assertion !!, it always succeeds.(ÔÚ‹8Û©§Œá1
+=kotlin:S125ö"Remove this commented out code.(ÊİÁm8±†¨Œá1
+Ckotlin:S125¿"Remove this commented out code.(‹ÜÖúúÿÿÿÿ8±†¨Œá1
+<kotlin:S6310º"Avoid hardcoded dispatchers.(Ô¥‚ü8¶†¨Œá1
+Mkotlin:S108")Either remove or fill this block of code.(êîØŸÿÿÿÿÿ8É†¨Œá1
+lkotlin:S6532ß"LReplace this throw expression with error("recordingState in unknown state").(Ç‰„§8Ò†¨Œá1
+‚kotlin:S1192Ê"]Define a constant instead of duplicating this literal "ë“±ë¡ ì‹¤íŒ¨í•˜ì˜€ìŠµë‹ˆë‹¤" 3 times.(”îÛÁÿÿÿÿÿ8×†¨Œá1
+mkotlin:S1871­"MThis branch's code block is the same as the block for the branch on line 418.(Û­ûÓ8¨Ñïà1
+hkotlin:S6512Ş"CConvert this getter to a "get()" on the property "outputDirectory".(éã³âùÿÿÿÿ8ã†¨Œá1

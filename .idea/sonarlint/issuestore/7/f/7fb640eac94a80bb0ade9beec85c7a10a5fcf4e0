@@ -1,0 +1,12 @@
+
+Qkotlin:S1481"4Remove this unused "rightElbowIndex" local variable.(­Ìûÿÿÿÿ
+Okotlin:S1481~"7Remove this unused "rightShoulderIndex" local variable.(¡ÊŸ
+ikotlin:S3776x"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(¡Ñ!
+Rkotlin:S1144["5Remove this unused private "resetPushUpCount" method.(ÎˆôËÿÿÿÿÿ
+Qkotlin:S6518„",Replace function call with indexed accessor.(ø¾Óúÿÿÿÿ8”Úä‹Æ1
+Lkotlin:S6518…",Replace function call with indexed accessor.(ôşï8”Úä‹Æ1
+Qkotlin:S6518†",Replace function call with indexed accessor.(‹”ŒÍùÿÿÿÿ8”Úä‹Æ1
+Qkotlin:S6518‘",Replace function call with indexed accessor.(Õ»ÛØøÿÿÿÿ8”Úä‹Æ1
+Lkotlin:S6518’",Replace function call with indexed accessor.(ÁÈàÏ8”Úä‹Æ1
+Qkotlin:S6518‘",Replace function call with indexed accessor.(Õ»ÛØøÿÿÿÿ8”Úä‹Æ1
+Lkotlin:S6518’",Replace function call with indexed accessor.(ÁÈàÏ8”Úä‹Æ1

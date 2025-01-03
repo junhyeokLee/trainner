@@ -1,0 +1,38 @@
+
+Gkotlin:S108`")Either remove or fill this block of code.(½ûöÆ8Ø¨ÕÆà1
+Gkotlin:S108w")Either remove or fill this block of code.(½ûöÆ8ß¨ÕÆà1
+Hkotlin:S108")Either remove or fill this block of code.(½ûöÆ8¥²êÆà1
+Hkotlin:S108£")Either remove or fill this block of code.(½ûöÆ8¦²êÆà1
+Hkotlin:S108¸")Either remove or fill this block of code.(½ûöÆ8¦²êÆà1
+Hkotlin:S108Ì")Either remove or fill this block of code.(½ûöÆ8¦²êÆà1
+Hkotlin:S108â")Either remove or fill this block of code.(½ûöÆ8¦²êÆà1
+Hkotlin:S108ù")Either remove or fill this block of code.(½ûöÆ8§²êÆà1
+Hkotlin:S108’")Either remove or fill this block of code.(½ûöÆ8§²êÆà1
+?kotlin:S6305'" Don't expose mutable flow types.(ŠİÈÂ8ã¨ÕÆà1
+?kotlin:S6305(" Don't expose mutable flow types.(İµÄƒ8ã¨ÕÆà1
+?kotlin:S6305)" Don't expose mutable flow types.(¢­ìÛ8ã¨ÕÆà1
+Dkotlin:S6305*" Don't expose mutable flow types.(Æˆêšıÿÿÿÿ8ä¨ÕÆà1
+?kotlin:S6305+" Don't expose mutable flow types.(™ôµ8ä¨ÕÆà1
+Dkotlin:S6305," Don't expose mutable flow types.(ª–Êùÿÿÿÿ8ä¨ÕÆà1
+?kotlin:S6305-" Don't expose mutable flow types.(ÖîÃœ8ä¨ÕÆà1
+Dkotlin:S6305." Don't expose mutable flow types.(˜‹òúÿÿÿÿ8ä¨ÕÆà1
+?kotlin:S6305/" Don't expose mutable flow types.(Î³ßë8ä¨ÕÆà1
+?kotlin:S63050" Don't expose mutable flow types.(ÒÁã8ä¨ÕÆà1
+?kotlin:S63051" Don't expose mutable flow types.(³ÏÅ“8ä¨ÕÆà1
+Tkotlin:S1481°"/Remove this unused "stepInsert" local variable.(Õ¸¼Áıÿÿÿÿ8¹²êÆà1
+Ukotlin:S1481"0Remove this unused "sleepStages" local variable.(Ôì¹úÿÿÿÿ8º²êÆà1
+Lkotlin:S1481",Remove this unused "seconds" local variable.(áË©Ø8ğ¨ÕÆà1
+Kkotlin:S1481Œ",Remove this unused "minutes" local variable.(ü»©Q8º²êÆà1
+Wkotlin:S1481Ó"2Remove this unused "dataSleepTime" local variable.(ï¿˜Îúÿÿÿÿ8ğ¨ÕÆà1
+Tkotlin:S1481Ò"5Remove this unused "dataHeartRateMin" local variable.(ß«ßK8ğ¨ÕÆà1
+Zkotlin:S1481Ñ"5Remove this unused "dataHeartRateMax" local variable.(³Ò÷•üÿÿÿÿ8ğ¨ÕÆà1
+Zkotlin:S1481Ğ"5Remove this unused "dataHeartRateAvg" local variable.(°Ó¨‘úÿÿÿÿ8ğ¨ÕÆà1
+Vkotlin:S1481Ï"1Remove this unused "dataDistance" local variable.(ÊŒ‘Íúÿÿÿÿ8ğ¨ÕÆà1
+Pkotlin:S1481Î"1Remove this unused "dataSpeedMin" local variable.(á€»S8ğ¨ÕÆà1
+Qkotlin:S1481Í"1Remove this unused "dataSpeedMax" local variable.(ÀŸ¬å8ğ¨ÕÆà1
+Vkotlin:S1481Ì"1Remove this unused "dataSpeedAvg" local variable.(Õñ¢¨şÿÿÿÿ8ğ¨ÕÆà1
+Qkotlin:S1481Ë"1Remove this unused "dataCalories" local variable.(„¬ç8ğ¨ÕÆà1
+Rkotlin:S1481Ê"-Remove this unused "dataStep" local variable.(€éÎ§øÿÿÿÿ8¼²êÆà1
+9kotlin:S1128"Remove this unused import.(åğ•8ú¨ÕÆà1
+9kotlin:S1128"Remove this unused import.(üƒŠ¸8ú¨ÕÆà1
+vkotlin:S37764"RRefactor this method to reduce its Cognitive Complexity from 58 to the 15 allowed.(áêú°üÿÿÿÿ8©ÕÆà1

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/item_group_exercise"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+    <TextView
+        android:id="@+id/tv_exercise_goal"
+        style="@style/text_roboto_R2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/exercise_goal"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_exercise_goal_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_exercise_goal_name"
+        />
+
+    <TextView
+        android:id="@+id/tv_exercise_goal_name"
+        style="@style/text_roboto_R3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/exercise_goal_name"
+        android:textColor="@color/gray"
+        android:layout_marginRight="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="@+id/spinner_exercise_goal"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_exercise_goal"
+        />
+
+    <com.sports2i.trainer.ui.view.CustomSpinner
+        android:id="@+id/spinner_exercise_goal"
+        style="@style/drop_down_secondary"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_exercise_goal_value"
+        style="@style/text_roboto_R3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/exercise_value"
+        android:textColor="@color/gray"
+        android:layout_marginRight="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/et_exercise_value"
+        app:layout_constraintTop_toTopOf="@+id/et_exercise_value"
+        app:layout_constraintBottom_toBottomOf="@+id/et_exercise_value"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_exercise_direct"
+        style="@style/input_box_edit"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_exercise_goal" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_exercise_value"
+        style="@style/input_box_edit"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/et_exercise_direct"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

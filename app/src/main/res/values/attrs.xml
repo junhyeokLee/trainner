@@ -1,0 +1,10 @@
+<resources>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="RatioLayout">
+        <attr name="layoutWidthRatio" format="integer"/>
+        <attr name="layoutHeightRatio" format="integer"/>
+    </declare-styleable>
+</resources>

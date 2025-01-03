@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.VideoCaptureActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/view_finder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:scaleType="fillStart"
+        >
+    </androidx.camera.view.PreviewView>
+
+    <TextView
+        android:id="@+id/quality_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HD"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/text_roboto_B3"
+        android:textSize="21sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/text_roboto_B"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_mili_seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=".00"
+        app:layout_constraintTop_toTopOf="@+id/tv_time"
+        app:layout_constraintBottom_toBottomOf="@id/tv_time"
+        app:layout_constraintStart_toEndOf="@+id/tv_time"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/white"
+        style="@style/text_roboto_B"
+        android:textSize="24sp"
+        />
+
+
+
+    <ImageButton
+        android:id="@+id/capture_button"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:background="@drawable/ic_start"
+        android:contentDescription="@string/capture"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="96dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/stop_button"
+        android:background="@drawable/ic_stop"
+        android:visibility="visible"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:contentDescription="@string/stop"
+        android:translationX="48dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/capture_button"
+        app:layout_constraintTop_toTopOf="@+id/capture_button"
+        app:layout_constraintBottom_toBottomOf="@+id/capture_button"
+        tools:ignore="ImageContrastCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"></ProgressBar>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

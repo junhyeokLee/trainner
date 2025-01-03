@@ -1,0 +1,16 @@
+
+>kotlin:S6615ï" Remove this useless initializer.(ÙµÅºøÿÿÿÿ
+6kotlin:S125("Remove this commented out code.(ÊÉñ³
+7kotlin:S125§"Remove this commented out code.(¦°åŞ
+@kotlin:S108P")Either remove or fill this block of code.(½ûöÆ
+?kotlin:S108b")Either remove or fill this block of code.(–®Ù]
+?kotlin:S108u")Either remove or fill this block of code.(–®Ù]
+@kotlin:S108ˆ")Either remove or fill this block of code.(–®Ù]
+@kotlin:S108›")Either remove or fill this block of code.(–®Ù]
+@kotlin:S108®")Either remove or fill this block of code.(–®Ù]
+@kotlin:S108Â")Either remove or fill this block of code.(–®Ù]
+@kotlin:S108Õ")Either remove or fill this block of code.(–®Ù]
+@kotlin:S108é")Either remove or fill this block of code.(–®Ù]
+@kotlin:S108„")Either remove or fill this block of code.(–®Ù]
+Nkotlin:S1481—"0Remove this unused "sleepStages" local variable.(Ôì¹úÿÿÿÿ
+jkotlin:S3776+"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ªóè 

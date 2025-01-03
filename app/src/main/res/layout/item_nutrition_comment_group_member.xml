@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_nutrition_direction"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    >
+    <LinearLayout
+        android:id="@+id/layout_nutrition_direction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/gradient_survey_item"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        >
+    <TextView
+        android:id="@+id/tv_nutrition_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_roboto_B2"
+        android:textColor="@color/white" />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout_nutrition_indicator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right|center"
+    android:gravity="right|center"
+    >
+
+    <TextView
+        android:id="@+id/tv_nutrition_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        style="@style/text_roboto_R2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

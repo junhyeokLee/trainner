@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#777" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <layer-list>
+            <item>
+                <clip
+                    android:clipOrientation="vertical"
+                    android:gravity="bottom">
+                    <shape>
+                        <gradient
+                            android:angle="90"
+                            android:centerColor="#FFFF00"
+                            android:endColor="#FF0000"
+                            android:startColor="#00FF00" />
+                    </shape>
+                </clip>
+            </item>
+            <item>
+                <clip
+                    android:clipOrientation="horizontal"
+                    android:gravity="fill">
+                    <layer-list>
+
+                        <item android:left="75dp">
+                            <rotate android:fromDegrees="90"
+                                android:toDegrees="90" >
+                                <shape android:shape="line">
+                                    <stroke android:width="5dp" android:color="#ff000000"/>
+                                </shape>
+                            </rotate>
+                        </item>
+
+                        <item android:left="25dp">
+                            <rotate android:fromDegrees="90"
+                                android:toDegrees="90" >
+                                <shape android:shape="line">
+                                    <stroke android:width="5dp" android:color="#ff000000"/>
+                                </shape>
+                            </rotate>
+                        </item>
+
+
+                        <item android:right="25dp">
+                            <rotate android:fromDegrees="90"
+                                android:toDegrees="90" >
+                                <shape android:shape="line">
+                                    <stroke android:width="5dp" android:color="#ff000000"/>
+                                </shape>
+                            </rotate>
+                        </item>
+
+                        <item android:right="75dp">
+                            <rotate android:fromDegrees="90"
+                                android:toDegrees="90" >
+                                <shape android:shape="line">
+                                    <stroke android:width="5dp" android:color="#ff000000"/>
+                                </shape>
+                            </rotate>
+                        </item>
+                    </layer-list>
+                </clip>
+            </item>
+        </layer-list>
+    </item>
+</layer-list>

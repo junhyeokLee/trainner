@@ -1,0 +1,6 @@
+
+\kotlin:S6619"7Remove this useless non-null check, it always succeeds.(²‹ŸÂıÿÿÿÿ8ƒ³ÑşÛ1
+Ckotlin:S125„"Remove this commented out code.(³¼Öâúÿÿÿÿ8“«¨Ü1
+>kotlin:S125±"Remove this commented out code.(è±şÈ8Çòî×1
+Mkotlin:S108Ü")Either remove or fill this block of code.(€¸¦’üÿÿÿÿ8†·®«¿1
+Dkotlin:S6524”"Make this collection immutable.(ŠêúÌıÿÿÿÿ8§´ÑşÛ1

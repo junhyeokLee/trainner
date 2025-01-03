@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 원형 배경 -->
+    <item android:drawable="@drawable/check_false_round_primary_nutrition_evaluation" />
+</layer-list>

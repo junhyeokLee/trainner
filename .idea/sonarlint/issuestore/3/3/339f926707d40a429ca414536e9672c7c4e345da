@@ -1,0 +1,25 @@
+
+—kotlin:S6611Ρ"rMap values should be accessed safely. Using the non-null assertion operator here can throw a NullPointerException.(¶£Ώϊÿÿÿÿ8ϊΡ²μα1
+—kotlin:S6611Υ"rMap values should be accessed safely. Using the non-null assertion operator here can throw a NullPointerException.(¶£Ώϊÿÿÿÿ8ϋΡ²μα1
+—kotlin:S6611μ"rMap values should be accessed safely. Using the non-null assertion operator here can throw a NullPointerException.(ώιώÿÿÿÿ8‘Μ΄μα1
+—kotlin:S6611π"rMap values should be accessed safely. Using the non-null assertion operator here can throw a NullPointerException.(–Ο›ϋÿÿÿÿ8‘Μ΄μα1
+Ckotlin:S125ζ"Remove this commented out code.(‡™ΨΥόÿÿÿÿ8„Ò²μα1
+>kotlin:S125½"Remove this commented out code.(ÿΕ›Ύ8…Ò²μα1
+>kotlin:S125Έ"Remove this commented out code.(η­Ο8›Μ΄μα1
+Mkotlin:S108­")Either remove or fill this block of code.(€Έ¦’όÿÿÿÿ8δΜ΄μα1
+Zkotlin:S1481Ό"5Remove this unused "heightFixedValue" local variable.(£ηέμόÿÿÿÿ8ωÒ²μα1
+Nkotlin:S1481Ξ")Remove this unused "text" local variable.(½³·ψÿÿÿÿ8ϊÒ²μα1
+>kotlin:S1128 "Remove this unused import.(Ò²χÿϊÿÿÿÿ8Σ²μα1
+9kotlin:S1128?"Remove this unused import.(“χοε8²¬ήβ1
+Dkotlin:S6524Κ"Make this collection immutable.(ξζψÿÿÿÿ8‘Ν΄μα1
+Dkotlin:S6524ψ"Make this collection immutable.(“¦γΙώÿÿÿÿ8‘Ν΄μα1
+Dkotlin:S6524"Make this collection immutable.(θ–€ρϋÿÿÿÿ8‘Ν΄μα1
+Dkotlin:S6524”"Make this collection immutable.(Έ†¶ςόÿÿÿÿ8‘Ν΄μα1
+Skotlin:S6529δ".Replace collection size check with "isEmpty()"(Βη ÿÿÿÿÿ8”Ν΄μα1
+Skotlin:S6529ω".Replace collection size check with "isEmpty()"(ϋω„ωÿÿÿÿ8”Ν΄μα1
+Lkotlin:S6518¦",Replace function call with indexed accessor.(ΒΕΪζ8±Σ²μα1
+Qkotlin:S6518§",Replace function call with indexed accessor.(ήΔ­ώÿÿÿÿ8±Σ²μα1
+Lkotlin:S6518¨",Replace function call with indexed accessor.(ÒΗϊ‘8±Σ²μα1
+Lkotlin:S6518·",Replace function call with indexed accessor.(ΒΕΪζ8±Σ²μα1
+Qkotlin:S6518Έ",Replace function call with indexed accessor.(ήΔ­ώÿÿÿÿ8±Σ²μα1
+Lkotlin:S6518Ή",Replace function call with indexed accessor.(ÒΗϊ‘8±Σ²μα1
