@@ -13,8 +13,9 @@
 Room, Dagger Hilt, Coroutines, Rtrofit, MVVM 사용
 
 
-![스크린샷 2025-01-03 오전 9 12 10](https://github.com/user-attachments/assets/45cecb49-88ae-4dc1-a356-858b326266d9)
-![스크린샷 2025-01-03 오전 9 12 25](https://github.com/user-attachments/assets/6fc5ffe0-1e76-4bb5-86ed-72a8a1d2a54a)
+![스크린샷 2025-01-03 오전 9 12 10]![스크린샷 2025-01-03 오전 9 15 31](https://github.com/user-attachments/assets/88dcabb7-94b6-4390-bcac-7c814323dd1d)
+(https://github.com/user-attachments/assets/45cecb49-88ae-4dc1-a356-858b326266d9)
+
 ![스크린샷 2025-01-03 오전 9 12 43](https://github.com/user-attachments/assets/b1317f64-f7e1-4b25-997b-b99dfde52609)
 ![스크린샷 2025-01-03 오전 9 12 57](https://github.com/user-attachments/assets/059ede2a-a42e-4976-b341-1c19d1eb71b5)
 ![스크린샷 2025-01-03 오전 9 13 12](https://github.com/user-attachments/assets/5006c3ad-9e93-4d40-9459-254dfd6b0931)
